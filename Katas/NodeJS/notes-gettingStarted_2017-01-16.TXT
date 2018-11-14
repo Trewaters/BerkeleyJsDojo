@@ -1,0 +1,14 @@
+Node.JS
+
+Getting Started
+- npm init
+** documentation ( https://docs.npmjs.com/cli/init )
+** programmatically create your package json
+
+- npm install
+** documentation ( https://docs.npmjs.com/cli/install )
+** [ --save ] is important, [ -global ]
+
+- npm uninstall
+** documentation ( https://docs.npmjs.com/cli/uninstall )
+** [ --save ] is important, [ -global ]

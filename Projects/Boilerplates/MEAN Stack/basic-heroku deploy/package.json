@@ -1,0 +1,43 @@
+{
+  "name": "BerkeleyJavascriptDojo",
+  "version": "0.1.1",
+  "description": "Berkeley Javascript Dojo...",
+  "keywords": [
+    "sun-e-lease",
+    "api",
+    "tre'",
+    "Tre'",
+    "grisby",
+    "Grisby",
+    "Lewis",
+    "solar",
+    "suncode",
+    "hackathon"
+  ],
+  "homepage": "https://docs.npmjs.com/files/package.json",
+  "license": "MIT",
+  "author": {
+    "name": "Tre' Grisby",
+    "email": "trewaters@hotmail.com"
+  },
+  "main": "ba_lkgiii",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Trewaters/<REPO_NAME>"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "pug":"^2.0.0-beta11",
+    "moment": "^2.13.0",
+    "morgan": "^1.7.0",
+    "node-expat": "^2.3.13",
+    "path": "^0.12.7",
+    "util": "^0.10.3",
+    "xml2js": "^0.4.16"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "devDependencies": {}
+}

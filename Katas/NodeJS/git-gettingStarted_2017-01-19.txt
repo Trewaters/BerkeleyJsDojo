@@ -1,0 +1,8 @@
+- create Git Repository
+** documentation ( https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository ) 
+** [ cd /c/user/your_repository ]
+** [ git init ]
+
+- clone an existing Repository
+** documentation ( https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository ) 
+** [ git clone https://github.com/libgit2/libgit2 ]

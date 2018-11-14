@@ -1,0 +1,8 @@
+Create a DB
+list collections, list databases
+Backup DB
+Restore from DB Backup
+Authenticate admin
+Authorization for users
+
+... other task rolled into a kata

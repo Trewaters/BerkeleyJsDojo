@@ -1,0 +1,13 @@
+WUXIA - Express web server
+WUXIA - OTHER web servers
+WUXIA - Email (SMTP) server
+WUXIA - FTP server
+
+*http requests
+*API middleware
+*npm
+*port configuration
+*check version
+** `node -v`
+*update/change version
+*package.json specifications
