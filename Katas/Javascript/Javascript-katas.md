@@ -28,3 +28,5 @@ var str = "1"; // string value
 var symbol = Symbol(42); // symbols
 var obj = {};
 ```
+
+## Conditionals

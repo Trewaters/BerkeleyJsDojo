@@ -24,6 +24,7 @@
 - `git config --global user.name "<USERNAME>"` - set authors name on the local computer
 - `git config --global user.email EMAIL@ADDRESS.COM` - set authors email address for the commit
 - `git commit --amend --reset-author` -go to the VI editor. End edits and quit with command `:q!`
+- `git rm --cached` - unstage file, [documented here](https://git-scm.com/docs/git-rm)
 
 ### Pushing Changes
 
