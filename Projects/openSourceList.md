@@ -1,6 +1,6 @@
-List of open source projects anyone can contribute to
+# List of open source projects anyone can contribute to
 
-### Agreggators
+## Agreggators
 - Progressive Coders ( http://www.progcode.co/ ), list of open source tools for the progressive movement
 - Node Foundation GitHub ( https://github.com/nodejs )
 - Up For Grabs ( http://up-for-grabs.net/#/ ), list of projects which have curated tasks specifally for new contributors
@@ -13,7 +13,7 @@ List of open source projects anyone can contribute to
 
 Full Attribution to Free Code Camp for this complete list ( https://github.com/freeCodeCamp/how-to-contribute-to-open-source )
 
-# OS Project List
+## OS Project List
 - [Node.js](https://github.com/nodejs),
 - [Microsoft](https://github.com/Microsoft)
 - [MongoDB](https://github.com/mongodb/mongo)

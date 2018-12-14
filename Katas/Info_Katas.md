@@ -1,4 +1,4 @@
-# Kata ( https://en.wikipedia.org/wiki/Kata )
+# Katas ( https://en.wikipedia.org/wiki/Kata )
 :notebook:: Exercises that help you deepen your programming knowledge.
 
 ### [GitHub](https://github.com/)

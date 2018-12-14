@@ -1,5 +1,5 @@
 # Wuxia, “Martial Arts Heroes” ( https://en.wikipedia.org/wiki/Wuxia )
-:notebook:: Javascript Wuxia are things you will need to do in any language, not just Javascript.
+:notebook:: Javascript Wuxia are things you will need to do in any language, not just Javascript. Wuxia is split into Front End Task, Server Side Task, Database Task, Web apps, and Mobile App Task.
 
 ### Front End Wuxia
 - Create a list of items
@@ -17,3 +17,9 @@
 - Stored Procedures or Triggers
 ### Mobile Apps Wuxia
 - ?
+### Web Apps Wuxia
+- ? MeAN Stack
+1. ToDo app
+- ? MeRN Stack
+1. ToDo app
+

@@ -1,22 +1,30 @@
-Welcome to the Berkeley Javascript Dojo GitHub repo. This `README.md` is important. We provide you with the basic structure of the repo in the Table of Contents. Each section listed in the table of contents has instructions on what and how to contribute to that section. The sections are folders in the repo.
+Welcome to the Berkeley Javascript Dojo GitHub repo. **This `README.md` is important.** 
+
+We provide the structure of this repo in the Table of Contents. Each section listed in the table of contents has instructions on what and how to contribute to that section. These sections are folders in the repo.
 
 # `Javascript Dojo Philosophy`
-Berkeley Javascript Dojo is the first of hopefully many coding dojos. The primary principle of this coding dojo is work. Everyone must work for the knowledge and skills they wish to attain. The second principle is sharing. Once a Sifu (practitioner) has learned something they are willing to share it with other Sifus that ask.
+Berkeley Javascript Dojo is the first of hopefully many coding dojos (Trey and Tristan were inspired to do similar meetups in their respective areas). The primary principle of this coding dojo is work. Everyone must work for the knowledge and skills they wish to attain. The second principle is sharing. Once a Sifu (practitioner) has learned something they must be willing to share it with other Sifus that ask.
 
-In order to help others I have created a github repo. The repo contains different folders over topics that anyone can access and use. I have structured this repo as outlined in this readme file.
+The goal of the Berkeley JavaScript Dojo is to show Sifus how they can improve their skill set with continuous work on their craft.
 
-The goal is to give Sifus practical tools to expand their knowledge base and skill sets. If a Sifu uses this Repo they should find something to test them and teach them.
+# Get Started
+- Create a Yatate file and submit it with a Pull Request (PR)
+- Attend a local Berkeley JavaScript Dojo meetup.
+1. People who attend the meetup, in-person, are given a slack invite. Slack is used for all the sifus to stay in touch between our monthly meetups. 
+2. NOTE: Treat the slack like a public forum. 
+- WORK... Work on your belts. Get a white belt from the Dojo.
 
 # `README.md` Table of Contents
 - [Katas](https://github.com/Trewaters/BerkeleyJsDojo#katas)
 - [Koans](https://github.com/Trewaters/BerkeleyJsDojo#koans)
-- [Notes](https://github.com/Trewaters/BerkeleyJsDojo#notes)
+- [Meetings](https://github.com/Trewaters/BerkeleyJsDojo#meetings)
 - [Projects](https://github.com/Trewaters/BerkeleyJsDojo#projects)
 - [Wuxia](https://github.com/Trewaters/BerkeleyJsDojo#wuxia)
 - [Yatate](https://github.com/Trewaters/BerkeleyJsDojo#yatate)
+- [ToDo](https://github.com/Trewaters/BerkeleyJsDojo#ToDo)
 
 # Katas
-Patterns that help you deepen your programming knowledge. Katas are broken into a few categories by framework.
+Patterns that help you deepen your programming knowledge. Katas are broken into a few categories designated by a sub-folder.
 - Angular - the file in the folder doesn't have 2 lines of information. Not even really started.
 - GitHub - I have spent the most work on this set of katas.
 - MongoDB - empty at the moment.
@@ -25,34 +33,19 @@ Patterns that help you deepen your programming knowledge. Katas are broken into 
 # Koans
 Programming riddles to ponder. Expand your perspective and hopefully become enlightened.
 
-# Notes
-Various notes that might help others. Related to meetup topics we have had in the past. Think of it like the meeting minutes.
+# Meetings
+Sifu notes taken during the meeting. Make your notes helpful to others reading them in the future. Think of this like Open Source documentation. It is a great practice.
 
 # Projects
-Sub folder of code that the group has worked on together. Projects in this section have a project lead and were voted in by a quorum. See the GitHub Issues, Projects and Wiki section for more detail on the project you are interested in.
-
-[GitHub Issues](https://github.com/Trewaters/BerkeleyJsDojo/issues)
-(TO DO: Link to GitHub issues page) All issues related to a project have labels with the project name in them. This will make the project related issues easier to search.
-
-[GitHub Projects](https://github.com/Trewaters/BerkeleyJsDojo/projects)
-(TO DO: Link to GitHub projects page) 
-
-[GitHub Wiki](https://github.com/Trewaters/BerkeleyJsDojo/wiki)
-(TO DO: Link to GitHub links page) The project lead has created a wiki for the project with the following format.
+Folder of code projects that Berkeley JavaScript Dojo ( BJD ) has worked on. Projects in this section have a "project lead". These project were merged into the list by the "Sifu 'Root'".
 
 # Wuxia
-Javascript Wuxia are things you will need to do in any language. Wuxia is split into Front End Task, Server Side Task, Database, and Mobile Apps.
+Javascript Wuxia are things you will need to do in any language, not just Javascript. Wuxia is split into Front End Task, Server Side Task, Database Task, Web apps, and Mobile App Task.
 
 # Yatate
-The Yatate is a folder of BJD members to create txt or md document named after their call-sign. In this document they will put the following.
-- Name: Real life name
-- Email: public email anyone can contact them at.
-- Github: profile web adress
-- Twitter: profile web address
-- LinkedIn: profile web address
-- StackOverflow: profile web address
-- Other web addresses: Any other web addresses they think the Dojo and public should know about like business, projects, or portfolio's
-- Notes or other miscellanious information.
+The Yatate is a folder of BJD members to create txt or md document named after their call-sign. 
 
-# To Do
-- The Github Kata folder is the most developed kata I have right now. Most of the other folders are empty and incomplete.
+# ToDo
+- The Github Kata folder is the most developed kata I have right now. I work on folders as I have more to add. Sifus should feel free to add to these sections as is appropriate to their knowledge level of the topic.
+- <2018-12-13> add an `Info_<SUBJECT>.md` for each folder. Match text to what is in the main `README.md`.
+- <2018-12-13> Clean up the Meetings folder. It should only have ".md" files in it. Starting this in 2019 at the January meetup.

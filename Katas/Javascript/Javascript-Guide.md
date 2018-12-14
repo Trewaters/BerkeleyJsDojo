@@ -36,6 +36,7 @@
 - Undefined
 - Symbols (new in ECMAScript 6)
 - Objects
+- Arrays ???
 - `typeof` operator
   - [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
 
@@ -58,55 +59,92 @@
       // no break necessary if it is the last switch block
   }
   ```
+- if
+  - Syntax: `if( x ){}`
+- ElseIf
+  - Syntax: `if( x ){}else{}`
+  - Syntax: 
+  ```javascript 
+  if( x ){
+    // code something
+  }elseif( y ){
+    // code another something
+  }else{
+    // if nothing else, then this will happen
+  }
+  ```
 
 ### Variable Declarations
+
 - `var` [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var)
 - `const`[documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
 - `let`[documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
 
-### Arrays + While Loops
+### Loops
 
-`const numArray = [];`
+#### For Loops
 
-`let numCount = 10;`
+```javascript
+for (var i = 0; i < 10; i++) {
+	console.log("We are on iteration number: " + i);
+}
+```
 
-`while( numCount > 0 ){ console.log( "Adding to your array" ); numArray[numCount-1]=numCount; numCount-- ; } ;`
+#### While Loops
 
-`console.log(numArray);`
+```javascript
+var userInput;
 
-`console.log(numArray.reverse());`
+while (userInput !== "STOP") {
+    userInput = prompt("Tell me something funny! Or
+ 					type STOP to exit this prompt");
+    console.log(userInput);
+}
+```
 
-`console.log (numArray.sort());`
+### Arrays
 
-- creates a subarray; effectively chopping out a slice of an original array, starting at one position and finishing at another
+- determines whether the passed value is an array [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray)
+
+`Array.isArray();`
+
+- sorts array in plance and returns the array, [document here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
+
+`numArray.sort();`
+
+- reverses an array in place [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse)
+
+`numArray.reverse();`
+
+- returns a shallow copy of a portion of an array into a new array object, starting in one position going to the end. Original array is not modified. [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
 
   `numArray.slice(2,4);`
 
-- removes items from an array then inserts new items in their place
+- removes items from an array then inserts new items in their place [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
 
   `numArray.splice(3,1,"Three Thousand");`
 
-- count amount items in the array
+- count amount items in the array [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length)
 
   `numArray.length;`
 
-- remove the last item from an array
+- remove the last item from an array [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)
 
   `numArray.pop();`
 
-- removes the first item in the array
+- removes the first item in the array [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift)
 
   `numArray.shift();`
 
-- appends a new value to the end of the array
+- appends a new value to the end of the array [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)
 
   `numArray.push();`
 
-- appends a new item to the beginning of the array
+- appends a new item to the beginning of the array [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift)
 
   `numArray.unshift(-1);`
 
-- merge an array with one or more arrays
+- merge an array with one or more arrays [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat)
 
   `numArray.concat(["one","two","three"]);`
 
@@ -114,21 +152,51 @@
 
   `numArray = [...numArray, ...["Four","Five","Six","Seven"]];`
 
-- turn the array into a string that comprises all the items in the array, separated by commas
+- turn the array into a string that comprises all the items in the array, separated by commas [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
 
   `numArray.join();`
 
   `numArray.join(" + ");`
 
-- find item position in array
+- find item position in array [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)
 
   `numArray.indexOf("Five");`
 
-- boolean value for element in array
+- boolean value for element in array [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)
 
   `numArray.includes("Three");`
 
-  `numArray.inclued("Tre");`
+#### Array, For Each Loop
+
+```javascript
+var dogs =  ["pomeranian","corgi", "shih tzu"];
+dogs.forEach(
+  function(dog) { 			// dog is a parameter name used
+    dog = dog + "s";  	// to represent each item 
+});
+console.log(dogs);					          // One thing to note: a forEach loop
+["pomeranian","corgi", "shih tzu"];  	// does not change the original array!
+```
+
+### Objects
+object documentation [here](https://javascript.info/object)
+
+```javascript
+var movie = {
+ 	"name": "Star Wars",
+ 	"year": 1977,
+ 	"director": "George Lucas",
+ 	"hasSequel": true,
+ 	"imdb": "http://www.imdb.com/title/tt0076759/"
+}
+```
+
+- keyword delete will remove the property
+
+`delete OBJECT.PROPERTY`
+
+- dot notation Object.KEY
+- bracket notation OBJECT["KEY"]
 
 ### Set
 
