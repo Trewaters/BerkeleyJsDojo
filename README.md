@@ -14,7 +14,7 @@ The goal of the Berkeley JavaScript Dojo is to show Sifus how they can improve t
 2. NOTE: Treat the slack like a public forum. 
 - WORK... Work on your belts. Get a white belt from the Dojo.
 
-# `README.md` Table of Contents
+# Table of Contents
 - [Katas](https://github.com/Trewaters/BerkeleyJsDojo#katas)
 - [Koans](https://github.com/Trewaters/BerkeleyJsDojo#koans)
 - [Meetings](https://github.com/Trewaters/BerkeleyJsDojo#meetings)
