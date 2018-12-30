@@ -38,6 +38,7 @@
 - `git checkout master` – switch branches
 - `git branch -d <FEATURE_X>` – delete the branch named <FEATURE_X>
 - `git push origin <branch>` – branch is unavailable until it is pushed to remote repository
+- `git branch -m <OLD-BRANCH-NAME> <NEW-BRANCH-NAME>` - rename branch
 
 - `git log --oneline --decorate` see the current HEAD Branch. or `git log --oneline --decorate --graph --all` see all the commits and where the pointers are.
 - `git log -1 --format="%an %ae%n%cn %ce` SHA_HASH
@@ -52,7 +53,7 @@
 
 ### Update & Merge
 
-- `git pull` – update local repo to newest commit
+- `git pull` – update local repo to newest commit [documented here](https://git-scm.com/docs/git-pull)
 - `git merge <branch>` – merge another branch into your active branch
 - `git add <FILENAME>` – mark changed file as merged. Caused by conflicts
 - `git diff <SOURCE_BRANCH> <TARGET_BRANCH>` – preview changes before merging, see [git diff](https://git-scm.com/docs/git-diff) for more details
@@ -103,3 +104,17 @@
 - `git push origin master`
 
 Using [Visual Git Guide](http://marklodato.github.io/visual-git-guide/index-en.html) as a reference for these katas
+
+### ADD- pull request
+- [about pull request](https://help.github.com/articles/about-pull-requests/) documentation
+- [create pull request](https://help.github.com/articles/creating-a-pull-request/)
+  - [create a pull request from a fork](https://help.github.com/articles/creating-a-pull-request-from-a-fork/)
+
+### ADD- forks
+- [working with forks](https://help.github.com/articles/working-with-forks/)
+- Syncing fork
+```javascript
+git fetch upstream  
+git checkout master
+git merge upstream/master
+```

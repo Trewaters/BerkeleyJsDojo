@@ -104,23 +104,23 @@ while (userInput !== "STOP") {
 
 ### Arrays
 
-- determines whether the passed value is an array [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray)
+- `.isArray()` determines whether the passed value is an array [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray)
 
 `Array.isArray();`
 
-- sorts array in plance and returns the array, [document here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
+- `.sort()` sorts array in place and returns the array, [document here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
 
 `numArray.sort();`
 
-- reverses an array in place [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse)
+- `.reverse()` reverses an array in place [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse)
 
 `numArray.reverse();`
 
-- returns a shallow copy of a portion of an array into a new array object, starting in one position going to the end. Original array is not modified. [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
+- `.slice()` returns a shallow copy of a portion of an array into a new array object, starting in one position going to the end. Original array is not modified. [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
 
   `numArray.slice(2,4);`
 
-- removes items from an array then inserts new items in their place [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
+- `.splice()` removes items from an array then inserts new items in their place [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
 
   `numArray.splice(3,1,"Three Thousand");`
 
@@ -197,6 +197,9 @@ var movie = {
 
 - dot notation Object.KEY
 - bracket notation OBJECT["KEY"]
+
+### HTML Forms using JavaScript
+- reference for forms ( https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Sending_forms_through_JavaScript )
 
 ### Set
 

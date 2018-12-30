@@ -44,8 +44,14 @@ Write a loop that will exit after a minute.
 
 Write a loop that count off minutes and hours until it reaches and end time. For example each minute it console.logs("Time elapsed is a minute").
 
-## Build an Array
+## Arrays: Build an Array
 Create an array of data. Must have at least 2 items. Loop through each item in the Array and console.log each of them.
+
+### Arrays: Reverse an Array
+Reverse array without using the `.reverse()` method
+
+- **Option 1:** Reverse array out of place
+- **Option 2:** Reverse array in place
 
 ## Objects
 Build an object, it must have at least 3 properties and 2 entries. Display the keys of that object. Display the values of that object you have built. 
