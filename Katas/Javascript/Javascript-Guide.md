@@ -124,27 +124,27 @@ while (userInput !== "STOP") {
 
   `numArray.splice(3,1,"Three Thousand");`
 
-- count amount items in the array [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length)
+- `.length()` count amount items in the array [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length)
 
   `numArray.length;`
 
-- remove the last item from an array [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)
+- `.pop()` remove the last item from an array [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)
 
   `numArray.pop();`
 
-- removes the first item in the array [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift)
+- `.shiftf()` removes the first item in the array [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift)
 
   `numArray.shift();`
 
-- appends a new value to the end of the array [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)
+- `.push()` appends a new value to the end of the array [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)
 
   `numArray.push();`
 
-- appends a new item to the beginning of the array [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift)
+- `.unshift()` appends a new item to the beginning of the array [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift)
 
   `numArray.unshift(-1);`
 
-- merge an array with one or more arrays [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat)
+- `.concat()` merge an array with one or more arrays [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat)
 
   `numArray.concat(["one","two","three"]);`
 
@@ -152,17 +152,17 @@ while (userInput !== "STOP") {
 
   `numArray = [...numArray, ...["Four","Five","Six","Seven"]];`
 
-- turn the array into a string that comprises all the items in the array, separated by commas [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
+- `.join()` turn the array into a string that comprises all the items in the array, separated by commas [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
 
   `numArray.join();`
 
   `numArray.join(" + ");`
 
-- find item position in array [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)
+- `.indexOf()` find item position in array [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf)
 
   `numArray.indexOf("Five");`
 
-- boolean value for element in array [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)
+- `.includes()` boolean value for element in array [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)
 
   `numArray.includes("Three");`
 
