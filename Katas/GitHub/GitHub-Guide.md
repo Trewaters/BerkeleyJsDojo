@@ -112,8 +112,14 @@ Using [Visual Git Guide](http://marklodato.github.io/visual-git-guide/index-en.h
 
 ### ADD- forks
 - [working with forks](https://help.github.com/articles/working-with-forks/)
+- Configuring a remote for a fork
+```
+git remote -v
+git remote add upstream <CLONE>
+git remote -v
+```
 - Syncing fork
-```javascript
+```
 git fetch upstream  
 git checkout master
 git merge upstream/master

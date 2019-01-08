@@ -201,6 +201,22 @@ var movie = {
 ### HTML Forms using JavaScript
 - reference for forms ( https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Sending_forms_through_JavaScript )
 
+### String (look here for more examples of strings https://www.w3schools.com/js/js_string_methods.asp )
+- `.length` returns the length of the string [documented here]()
+- `.indexOf()` returns the index of the first occurrence of text in a string [documented here]()
+- `.lastIndexOf()` returns the index of the last occurrence of text in a string [documented here]()
+- `.search()` returns the position of the matching string. Plus can use regular expressions. [documented here]()
+- `.slice()` extracts part of a string and treturns the extracted part in a new string. Parameters are the start position and the end position. [documented here]()
+- `.split()` converts string to an array. [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
+```javascript
+var str = "The quick brown fox jumped over the lazy dog.";
+
+var words = str.split(' ');
+console.log(words);
+// expected output: ["The", "quick", "brown", "fox", "jumped", "over", "the", "lazy", "dog."]
+```
+- `` [documented here]()
+
 ### Set
 
 ### Weak Set
