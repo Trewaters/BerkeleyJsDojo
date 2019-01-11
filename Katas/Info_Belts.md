@@ -1,9 +1,9 @@
 # Obi ["Belts"](https://en.wikipedia.org/wiki/Obi_(martial_arts))
-:Fireworks::Trophy:: Congratulations on making it this far.
+:Fireworks::Trophy:: Congratulations on making it this far. Mentors and students must work.
 
 ## White [0] - 0000
-- Do any of the Kata positions for 30 days contiguously. Have public verifiable proof of your work. Mentors count.
-1. Post your kata work in your Github repo.
+- Do any of the Kata positions for 30 days contiguously. Have public verifiable proof of your work. Mentors must spend the time to count each post. That is part of your work as their mentor. 
+1. Post your kata work in your Github repo. The upload date-time is important. 
 
 ## Yellow [1] - 0100
 - Verify a white belts 30 day contiguous work as their mentor.
@@ -20,7 +20,8 @@
 
 ## Green [3] - 1100
 - #100DaysOfCode Challenge
-- Give a shout out to #BerkeleyJavaScriptDojo in your posts.
+- #300DaysOfCode Challenge
+- In additon to your challenge please give a shout out to #BerkeleyJavaScriptDojo in your posts.
 
 ## Blue [4] - 0010
 - Give back to the coding community and learn while you give.
