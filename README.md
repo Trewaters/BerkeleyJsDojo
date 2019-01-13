@@ -43,7 +43,11 @@ Folder of code projects that Berkeley JavaScript Dojo ( BJD ) has worked on. Pro
 Javascript Wuxia are things you will need to do in any language, not just Javascript. Wuxia is split into Front End Task, Server Side Task, Database Task, Web apps, and Mobile App Task.
 
 # Yatate
+**Step 1 for getting started** is to create a Yatate file.
+
 The Yatate is a folder of BJD members to create txt or md document named after their call-sign. 
+
+The call-sign is your sifu name, the name you want to go by in the dojo. This is just for fun. It can't be the same as someone else's and should be respectful of others. The Yatate file is full of contact information for you. Read the "Yatate-README.md"
 
 # ToDo
 - The Github Kata folder is the most developed kata I have right now. I work on folders as I have more to add. Sifus should feel free to add to these sections as is appropriate to their knowledge level of the topic.

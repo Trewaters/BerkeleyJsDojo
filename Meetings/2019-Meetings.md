@@ -5,23 +5,16 @@
 - Tre' G.
 
 **Notes:**
-- Talk about what #301DaysOfCode is about.
+- Talk about what #301DaysOfCode is. More details on their 
+  - Website (https://301daysofcode.com/)
+  - Discord (http://codecareer.org/Discord)
+  - Github repo (https://github.com/benjaminspak/301-Days-Of-Code)
 - Discuss what Berkeley JS Dojo is about. ( Our focus is about the grind. Work over talking. )
-  - being specific I will talk about the Yatate file.
-  - Katas as daily practice.
+  - Get started in our Dojo by adding a Yatate file (https://github.com/Trewaters/BerkeleyJsDojo#yatate)
+  - Katas are a daily practice.
   - Local meetups (inspired 2 of these so far)
-  - Gain belts ()
-- Find the 301DaysOfCode website.
-- Accept/Deny the challenge
-- Fork repo ( https://github.com/benjaminspak/301-Days-Of-Code )
-- Read the repo rules.
-  - commit to at least 3 minutes and 1 second of coding every day.
-  - Review logging progress everyday. Topics are as follows:
-  1. Date of work
-  2. Today's progress
-  3. Thoughts
-  4. Link to work.
+  - Gain belts (https://github.com/Trewaters/BerkeleyJsDojo/blob/master/Katas/Info_Belts.md)
 - Realize supporting others is a great way of giving to the community and maybe finding a challenge partner.
 - Post to Twitter or some social media out that you have begun the challenge.
-- Find the Discord (http://codecareer.org/Discord)
-- Website (https://301daysofcode.com/)
+- Periscope video on twitter (https://twitter.com/ak2webd3/status/1084194494612795393), duration 14:52 minutes. Overview of Berkeley JavaScript Dojo and #301DaysOfCode
+- 
