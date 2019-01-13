@@ -1,20 +1,13 @@
-Welcome to the Berkeley Javascript Dojo GitHub repo. **This `README.md` is important.** 
+# Berkeley JavaScript Dojo (BJD)
+Welcome to the Berkeley Javascript Dojo GitHub repo. We provide the structure of this repo in the Table of Contents. Each section listed in the table of contents has instructions on what and how to contribute to that section. These sections are also folders in the repo.
 
-We provide the structure of this repo in the Table of Contents. Each section listed in the table of contents has instructions on what and how to contribute to that section. These sections are folders in the repo.
-
-# `Javascript Dojo Philosophy`
+## `Javascript Dojo Philosophy`
 Berkeley Javascript Dojo is the first of hopefully many coding dojos (Trey and Tristan were inspired to do similar meetups in their respective areas). The primary principle of this coding dojo is work. Everyone must work for the knowledge and skills they wish to attain. The second principle is sharing. Once a Sifu (practitioner) has learned something they must be willing to share it with other Sifus that ask.
 
 The goal of the Berkeley JavaScript Dojo is to show Sifus how they can improve their skill set with continuous work on their craft.
 
-# Get Started
-- Create a Yatate file and submit it with a Pull Request (PR)
-- Attend a local Berkeley JavaScript Dojo meetup.
-1. People who attend the meetup, in-person, are given a slack invite. Slack is used for all the sifus to stay in touch between our monthly meetups. 
-2. NOTE: Treat the slack like a public forum. 
-- WORK... Work on your belts. Get a white belt from the Dojo.
-
 # Table of Contents
+- [Welcome, Get Started](https://github.com/Trewaters/BerkeleyJsDojo#get-started)
 - [Katas](https://github.com/Trewaters/BerkeleyJsDojo#katas)
 - [Koans](https://github.com/Trewaters/BerkeleyJsDojo#koans)
 - [Meetings](https://github.com/Trewaters/BerkeleyJsDojo#meetings)
@@ -23,26 +16,33 @@ The goal of the Berkeley JavaScript Dojo is to show Sifus how they can improve t
 - [Yatate](https://github.com/Trewaters/BerkeleyJsDojo#yatate)
 - [ToDo](https://github.com/Trewaters/BerkeleyJsDojo#ToDo)
 
-# Katas
+## Get Started
+- Create a Yatate file and submit it with a Pull Request (PR)
+- Attend a local Berkeley JavaScript Dojo meetup.
+  1. People who attend the meetup, in-person, are given a slack invite. Slack is used for all the sifus to stay in touch between our monthly meetups. 
+  2. NOTE: Treat the slack like a public forum. 
+- WORK... Work on your belts. Get a white belt from the Dojo.
+
+## Katas
 Patterns that help you deepen your programming knowledge. Katas are broken into a few categories designated by a sub-folder.
 - Angular - the file in the folder doesn't have 2 lines of information. Not even really started.
 - GitHub - I have spent the most work on this set of katas.
 - MongoDB - empty at the moment.
 - Node - I started on this but it is a mess at the moment. This is before I got a structure to the idea of katas.
 
-# Koans
+## Koans
 Programming riddles to ponder. Expand your perspective and hopefully become enlightened.
 
-# Meetings
+## Meetings
 Sifu notes taken during the meeting. Make your notes helpful to others reading them in the future. Think of this like Open Source documentation. It is a great practice.
 
-# Projects
+## Projects
 Folder of code projects that Berkeley JavaScript Dojo ( BJD ) has worked on. Projects in this section have a "project lead". These project were merged into the list by the "Sifu 'Root'".
 
-# Wuxia
+## Wuxia
 Javascript Wuxia are things you will need to do in any language, not just Javascript. Wuxia is split into Front End Task, Server Side Task, Database Task, Web apps, and Mobile App Task.
 
-# Yatate
+## Yatate
 **Step 1 for getting started** is to create a Yatate file.
 
 The Yatate is a folder of BJD members to create txt or md document named after their call-sign. 
