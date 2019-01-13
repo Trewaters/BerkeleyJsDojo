@@ -15,6 +15,7 @@
   - Local meetups (inspired 2 of these so far)
   - Gain belts (https://github.com/Trewaters/BerkeleyJsDojo/blob/master/Katas/Info_Belts.md)
 - Realize supporting others is a great way of giving to the community and maybe finding a challenge partner.
-- Post to Twitter or some social media out that you have begun the challenge.
+- Post to Twitter, or some social media that you have begun the #301DaysOfCode challenge.
+- Help the BJD by joining Slack (talk to others/community of Sifus), Twitter post (boost our signal), or join Meetup (Keep up on events).;
 - Periscope video on twitter (https://twitter.com/ak2webd3/status/1084194494612795393), duration 14:52 minutes. Overview of Berkeley JavaScript Dojo and #301DaysOfCode
 - 
