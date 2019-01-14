@@ -1,21 +1,41 @@
 # Sort Katas
 ## Bubble Sort
--Time Complexity
+Time Complexity
+| Worst-Case        | Average           | Best  |
+| :---------------: |:-----------------:| :---: |
+|       O(n^2)      |        O(n^2)     | O(n^2)|
 
 -Challenge:
+Given an array, sort the elements using the Bubble sort method.
+
+```
+const array = [4, 45, 2, 3, 7, 1];
+bubbleSort(array);
+
+function bubbleSort(arr) {
+  let len = arr.length;
+  let tempValue = 0;
+  for(let i = len - 1; i  >= 0; i--){
+    for(let j = 1; j <= i; j++) {  
+        
+        if(arr[j-1] > arr[j]) {
+            tempValue = arr[j];
+            arr[j] = arr[j-1];
+            arr[j-1] = tempValue;
+        }
+    }
+  }
+  console.log(arr);
+}
+```
 
 ## Selection Sort
--Time Complexity
-
 -Challenge:
 
 ## Insertion Sort
--Time Complexity
-
 -Challenge:
 
 ## Merge Sort
--Time Complexity
 -Challenge:
 Given five positive integers, find the minimum and maximum values that can be calculated by summing exactly four of the five integers. Then print the respective minimum and maximum values as a single line of two space-separated long integers.
 
