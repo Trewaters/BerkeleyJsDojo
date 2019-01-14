@@ -50,6 +50,7 @@ The Yatate is a folder of BJD members to create txt or md document named after t
 The call-sign is your sifu name, the name you want to go by in the dojo. This is just for fun. It can't be the same as someone else's and should be respectful of others. The Yatate file is full of contact information for you. Read the "Yatate-README.md"
 
 # ToDo
+- (1/14/2019) This section will be moved eventually to the [Github projects section](https://github.com/Trewaters/BerkeleyJsDojo/projects).
 - The Github Kata folder is the most developed kata I have right now. I work on folders as I have more to add. Sifus should feel free to add to these sections as is appropriate to their knowledge level of the topic.
 - <2018-12-13> add an `Info_<SUBJECT>.md` for each folder. Match text to what is in the main `README.md`.
 - <2018-12-13> Clean up the Meetings folder. It should only have ".md" files in it. Starting this in 2019 at the January meetup.
