@@ -124,3 +124,14 @@ git fetch upstream
 git checkout master
 git merge upstream/master
 ```
+
+### Commit Notes
+- Originally I read it [here](https://gist.github.com/robertpainsi/b632364184e70900af4ab688decf6f53) and try to improve my commit messages.
+- Below is a list of standard commit subjects that I use.
+  - [INITIALIZE] -  getting started setting up the app
+  - [DEBUG] -       debugging
+  - [UPDATE] -      update the code
+  - [ADD] -         adding something new
+  - [DELETE] -      delete code
+  - [REFACTOR] -    optimize code
+  - [ISSUE] -       when referring to or trying to fix an issue.
