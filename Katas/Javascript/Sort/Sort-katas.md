@@ -1,11 +1,11 @@
 # Sort Katas
 ## Bubble Sort
-Time Complexity
-| Worst-Case        | Average           | Best  |
-| :---------------: |:-----------------:| :---: |
-|       O(n^2)      |        O(n^2)     | O(n^2)|
+Time Complexity:
+Worst-Case | Average | Best
+--- | --- | ---
+O(n^2) | O(n^2) | O(n)
 
--Challenge:
+Challenge:
 Given an array, sort the elements using the Bubble sort method.
 
 ```
@@ -30,7 +30,35 @@ function bubbleSort(arr) {
 ```
 
 ## Selection Sort
--Challenge:
+Time Complexity:
+Worst-Case | Average | Best
+--- | --- | ---
+O(n^2) | O(n^2) | O(n^2)
+
+Challenge:
+Given an array of positive integers, sort the elements using selection sort.
+```
+let array = [23, 233, 6, 1, 75, 3, 2, 7];
+
+selectionSort(array);
+
+function selectionSort(arr){
+  let tempElement = 0;
+  
+  for( let i = 0; i < arr.length; i++ ) {
+    let minIdx = i;
+    for( let index = i + 1; index < arr.length; index++ ){
+      if( arr[minIdx] > arr[index] ){
+        minIdx = index;
+      }
+    }
+    tempElement = arr[minIdx];
+    arr[minIdx] = arr[i];
+    arr[i] = tempElement;
+  }  
+  console.log(arr);
+}
+```
 
 ## Insertion Sort
 -Challenge:
