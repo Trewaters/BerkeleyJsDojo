@@ -61,10 +61,31 @@ function selectionSort(arr){
 ```
 
 ## Insertion Sort
--Challenge:
+Time Complexity:
+Worst-Case | Average | Best
+--- | --- | ---
+O(n) | O(n^2) | O(n^2)
 
+Challenge:
+let array = [11, 34, 6, 812, 2, 5, 64, 33];
+```
+insertion(array);
+function insertion(arr) {
+  let length = arr.length;
+  for(let i = 1; i < length; i++){
+    let tempValue = arr[i];
+    let position = i;
+    while(tempValue < arr[position - 1] && position > 0){
+      arr[position] = arr[position - 1];
+      position = position - 1;
+    }
+    arr[position] = tempValue;
+  }
+  console.log(arr);
+}
+```
 ## Merge Sort
--Challenge:
+Challenge:
 Given five positive integers, find the minimum and maximum values that can be calculated by summing exactly four of the five integers. Then print the respective minimum and maximum values as a single line of two space-separated long integers.
 
 For example, . Our minimum sum is  and our maximum sum is . We would print
