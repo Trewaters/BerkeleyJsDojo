@@ -67,6 +67,7 @@ Worst-Case | Average | Best
 O(n) | O(n^2) | O(n^2)
 
 Challenge:
+Given an array of positive integers, sort the elements using insertion sort.
 let array = [11, 34, 6, 812, 2, 5, 64, 33];
 ```
 insertion(array);
