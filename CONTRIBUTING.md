@@ -5,6 +5,27 @@ email, or any other method with the owners of this repository before making a ch
 
 Please note we have a code of conduct, please follow it in all your interactions with the project.
 
+## Formatting
+
+There are principles for contributing to each folder. Currently I know the kata and yatate files really well so I will start with those. As this repo grows I will add more guidelines for other folders. If you have ideas for improvement please make an example and start an issue so we can discuss your perspective.
+
+### Yatate contributions
+
+### Kata contributions
+
+- `<STYLE>-katas.md` - the intent of katas is to be have no code. Only a description of what the sifu should do.
+  - All katas are labeled as `### Position <NUMBER>: <TITLE-OF-KATA>`.
+  - Title is followed by a bulleted description of what the sifu should do. I like step by step but paragraph format is acceptable also.
+  - Katas are added at the bottom of each file and numbered sequentially. This sets up a chronology and makes it easier to reference for sifus in the future.
+- `<STYLE>-guide.md` - the intent of the guide is to help sifus learn. There are multiple ways to solve any programming challenge. The guide shows one way to solve the kata in detail. 
+  - The guide is the place to outline all the details for accomplishing a kata "position".
+  - List steps in bullets so they are easy to follow.
+  - use back ticks to highlight code like so `code to do something`
+  - or you can use multiple backticks to highlight sections of code like so
+  ```javascript
+  /// do some code here
+  ``` 
+
 ## Pull Request Process
 
 1. Fork the "BJD" repo.
