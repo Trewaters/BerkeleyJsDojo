@@ -17,7 +17,9 @@ The goal of the Berkeley JavaScript Dojo is to show Sifus how they can improve t
 - [ToDo](https://github.com/Trewaters/BerkeleyJsDojo#ToDo)
 
 ## Get Started
-- Create a Yatate file and submit it with a Pull Request (PR)
+- Create a Yatate file and submit it with a Pull Request (PR) 
+  - [Github Kata Position #1 here](https://github.com/Trewaters/BerkeleyJsDojo/blob/master/Katas/GitHub/GitHub-katas.md#position-1-join-the-dojo-initialize-yatate-file)
+  - [Github code guide for Position #1 here](https://github.com/Trewaters/BerkeleyJsDojo/blob/master/Katas/GitHub/GitHub-Guide.md#position-1-join-the-dojo-initialize-yatate-file)
 - Attend a local Berkeley JavaScript Dojo meetup.
   1. People who attend the meetup, in-person, are given a slack invite. Slack is used for all the sifus to stay in touch between our monthly meetups. 
   2. NOTE: Treat the slack like a public forum. 
