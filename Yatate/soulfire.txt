@@ -13,5 +13,5 @@ BJD Belts:
 - Yellow Belt, started on January 12, 2019 with Sifu "Warrior of the light".
 - White Belt, summer of 2018 doing Github katas.
 
-Bio:
+Notes:
 I created Berkeley Javascript Dojo January 2017. The thought came to me because I was looking for a group to code with and share knowledge. Our 1st meeting was in January 14, 2017.

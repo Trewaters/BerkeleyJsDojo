@@ -1,9 +1,11 @@
 # Contributing
 
-When contributing to this repository, please first discuss the change you wish to make via issue,
-email, or any other method with the owners of this repository before making a change. 
+When contributing to this repository, please discuss the change you wish to make via issue,
+email, or any other method with the owners of this repository before making a change. _Please note we have a code of conduct, follow it in all your interactions with the project._
 
-Please note we have a code of conduct, please follow it in all your interactions with the project.
+## Read the `<STYLE>-README.md`
+
+Each folder has a `<STYLE>-README.md` file in it. **Please read it before contributing to that section.** The read me is where the details for that folder are found. This contributing file has some information but it is only the highlights. The `<STYLE>-README.md` files have all the necessary information you should know before contributing.
 
 ## Formatting
 
@@ -11,9 +13,13 @@ There are principles for contributing to each folder. Currently I know the kata 
 
 ### Yatate contributions
 
+- [yatate-readme](./Yatate/Yatate-README.md) for all details.
+- A Yatate file can be in the format of `.txt` or `.md`. Please keep this file readable.
+- The file name for the sifu's yatate file is `<SIFU-CALL-SIGN>.txt`.
 
 ### Kata contributions
 
+- [kata-readme](./Katas/Katas-README.md) for all details.
 - `<STYLE>-katas.md` - the intent of katas is to be have no code. Only a description of what the sifu should do.
   - All katas are labeled as `### Position <NUMBER>: <TITLE-OF-KATA>`.
   - Title is followed by a bulleted description of what the sifu should do. I like step by step but paragraph format is acceptable also.
@@ -26,8 +32,8 @@ There are principles for contributing to each folder. Currently I know the kata 
   ```javascript
   /// do some code here
   ``` 
-  - Top of the guide has general <STYLE> commands and patterns.
-  - Bottom of a style guide where a sifu will add new *Position* guides with the corresponding code.
+  - Top of the style guide has general <STYLE> commands and patterns.
+  - Bottom of a style guide is where a sifu will add new *Position* guides with the corresponding code. The code should be detailed enough that a sifu could cut and paste it.
 
 ## Pull Request Process
 
