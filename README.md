@@ -7,14 +7,14 @@ Berkeley Javascript Dojo is the first of hopefully many coding dojos (Trey and T
 The goal of the Berkeley JavaScript Dojo is to show Sifus how they can improve their skill set with continuous work on their craft.
 
 # Table of Contents
-- [Welcome, Get Started](#get-started)
-- [Katas](#katas)
-- [Koans](#koans)
-- [Meetings](#meetings)
-- [Projects](#projects)
-- [Wuxia](#wuxia)
-- [Yatate](#yatate)
-- [ToDo](#ToDo)
+- [Welcome, Get Started](README.md#get-started)
+- [Katas](README.md#katas)
+- [Koans](README.md#koans)
+- [Meetings](README.md#meetings)
+- [Projects](README.md#projects)
+- [Wuxia](README.md#wuxia)
+- [Yatate](README.md#yatate)
+- [ToDo](README.md#ToDo)
 
 ## Get Started
 - Create a Yatate file and submit it with a Pull Request (PR) 
