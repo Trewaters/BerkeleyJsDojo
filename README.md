@@ -8,13 +8,13 @@ The goal of the Berkeley JavaScript Dojo is to show Sifus how they can improve t
 
 # Table of Contents
 - [Welcome, Get Started](#get-started)
-- [Katas](BerkeleyJsDojo#katas)
-- [Koans](BerkeleyJsDojo#koans)
-- [Meetings](BerkeleyJsDojo#meetings)
-- [Projects](BerkeleyJsDojo#projects)
-- [Wuxia](BerkeleyJsDojo#wuxia)
-- [Yatate](BerkeleyJsDojo#yatate)
-- [ToDo](BerkeleyJsDojo#ToDo)
+- [Katas](#katas)
+- [Koans](#koans)
+- [Meetings](#meetings)
+- [Projects](#projects)
+- [Wuxia](#wuxia)
+- [Yatate](#yatate)
+- [ToDo](#ToDo)
 
 ## Get Started
 - Create a Yatate file and submit it with a Pull Request (PR) 
@@ -45,7 +45,7 @@ Folder of code projects that Berkeley JavaScript Dojo ( BJD ) has worked on. Pro
 Javascript Wuxia are things you will need to do in any language, not just Javascript. Wuxia is split into Front End Task, Server Side Task, Database Task, Web apps, and Mobile App Task.
 
 ## Yatate
-[Step 1 for getting started](BerkeleyJsDojo#get-started) is to create a Yatate file.
+[Step 1 for getting started](#get-started) is to create a Yatate file.
 
 The Yatate is a folder of BJD members to create txt or md document named after their call-sign. 
 
