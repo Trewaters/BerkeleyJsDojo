@@ -7,7 +7,7 @@ Berkeley Javascript Dojo is the first of hopefully many coding dojos (Trey and T
 The goal of the Berkeley JavaScript Dojo is to show Sifus how they can improve their skill set with continuous work on their craft.
 
 # Table of Contents
-- [Welcome, Get Started](BerkeleyJsDojo#get-started)
+- [Welcome, Get Started](#get-started)
 - [Katas](BerkeleyJsDojo#katas)
 - [Koans](BerkeleyJsDojo#koans)
 - [Meetings](BerkeleyJsDojo#meetings)
