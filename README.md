@@ -7,14 +7,14 @@ Berkeley Javascript Dojo is the first of hopefully many coding dojos (Trey and T
 The goal of the Berkeley JavaScript Dojo is to show Sifus how they can improve their skill set with continuous work on their craft.
 
 # Table of Contents
-- [Welcome, Get Started](https://github.com/Trewaters/BerkeleyJsDojo#get-started)
-- [Katas](https://github.com/Trewaters/BerkeleyJsDojo#katas)
-- [Koans](https://github.com/Trewaters/BerkeleyJsDojo#koans)
-- [Meetings](https://github.com/Trewaters/BerkeleyJsDojo#meetings)
-- [Projects](https://github.com/Trewaters/BerkeleyJsDojo#projects)
-- [Wuxia](https://github.com/Trewaters/BerkeleyJsDojo#wuxia)
-- [Yatate](https://github.com/Trewaters/BerkeleyJsDojo#yatate)
-- [ToDo](https://github.com/Trewaters/BerkeleyJsDojo#ToDo)
+- [Welcome, Get Started](BerkeleyJsDojo#get-started)
+- [Katas](BerkeleyJsDojo#katas)
+- [Koans](BerkeleyJsDojo#koans)
+- [Meetings](BerkeleyJsDojo#meetings)
+- [Projects](BerkeleyJsDojo#projects)
+- [Wuxia](BerkeleyJsDojo#wuxia)
+- [Yatate](BerkeleyJsDojo#yatate)
+- [ToDo](BerkeleyJsDojo#ToDo)
 
 ## Get Started
 - Create a Yatate file and submit it with a Pull Request (PR) 
@@ -45,14 +45,14 @@ Folder of code projects that Berkeley JavaScript Dojo ( BJD ) has worked on. Pro
 Javascript Wuxia are things you will need to do in any language, not just Javascript. Wuxia is split into Front End Task, Server Side Task, Database Task, Web apps, and Mobile App Task.
 
 ## Yatate
-**Step 1 for getting started** is to create a Yatate file.
+[Step 1 for getting started](BerkeleyJsDojo#get-started) is to create a Yatate file.
 
 The Yatate is a folder of BJD members to create txt or md document named after their call-sign. 
 
 The call-sign is your sifu name, the name you want to go by in the dojo. This is just for fun. It can't be the same as someone else's and should be respectful of others. The Yatate file is full of contact information for you. Read the "Yatate-README.md"
 
 # ToDo
-- (1/14/2019) This section will be moved eventually to the [Github projects section](https://github.com/Trewaters/BerkeleyJsDojo/projects).
+- (1/14/2019) This section will be moved eventually to the [Github projects section](BerkeleyJsDojo/projects).
 - The Github Kata folder is the most developed kata I have right now. I work on folders as I have more to add. Sifus should feel free to add to these sections as is appropriate to their knowledge level of the topic.
 - <2018-12-13> add an `Info_<SUBJECT>.md` for each folder. Match text to what is in the main `README.md`.
 - <2018-12-13> Clean up the Meetings folder. It should only have ".md" files in it. Starting this in 2019 at the January meetup.

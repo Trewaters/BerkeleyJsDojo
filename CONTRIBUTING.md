@@ -11,6 +11,7 @@ There are principles for contributing to each folder. Currently I know the kata 
 
 ### Yatate contributions
 
+
 ### Kata contributions
 
 - `<STYLE>-katas.md` - the intent of katas is to be have no code. Only a description of what the sifu should do.
@@ -25,6 +26,8 @@ There are principles for contributing to each folder. Currently I know the kata 
   ```javascript
   /// do some code here
   ``` 
+  - Top of the guide has general <STYLE> commands and patterns.
+  - Bottom of a style guide where a sifu will add new *Position* guides with the corresponding code.
 
 ## Pull Request Process
 
