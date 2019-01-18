@@ -37,6 +37,7 @@
 - `git checkout -b <FEATURE_X>` – create and name a branch
 - `git checkout master` – switch branches
 - `git branch -d <FEATURE_X>` – delete the branch named <FEATURE_X>
+  - In order to delete remote branches use this `git branch -d -r origin/<FEATURE_X>`. [doc explanation](https://git-scm.com/docs/git-branch)
 - `git push origin <branch>` – branch is unavailable until it is pushed to remote repository
 - `git branch -m <OLD-BRANCH-NAME> <NEW-BRANCH-NAME>` - rename branch
 
