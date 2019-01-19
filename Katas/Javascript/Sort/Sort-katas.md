@@ -8,6 +8,7 @@ does so until an entire passthrough is completed without any swaps occuring.
 
 ### Selection Sort
 - [documented here](https://guide.freecodecamp.org/algorithms/sorting-algorithms/selection-sort)
+-Check every cell in an array from left to right. Initially set the first indexed value as the lowest value in the array. 
 
 ### Insertion Sort
 - [documented here](https://guide.freecodecamp.org/algorithms/sorting-algorithms/insertion-sort)
