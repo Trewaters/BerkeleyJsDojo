@@ -20,7 +20,7 @@ you iterate thru the array, check the value of each index.
 to be the value of the current index. 
 4. Once you've iterated thru the array n times and completed the passthru, swap the value from 
 the first index with the value of the last index that was set to be the lowest value in the array. 
-5 .The start of subsequent passthrus will shift incrementally by one. That will be the outer 
+5. The start of subsequent passthrus will shift incrementally by one. That will be the outer 
 loop's function.
 
 ### Insertion Sort
