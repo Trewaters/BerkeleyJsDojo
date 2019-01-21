@@ -26,16 +26,24 @@ loop's function.
 ### Insertion Sort
 - [documented here](https://guide.freecodecamp.org/algorithms/sorting-algorithms/insertion-sort)
 -In this implementation of the insertion sort method, a while loop is nested inside of a for
-loop. There are three main operations that occur with this method: removal of value from index,
-temporary storage of removed value, comparison between temporary value and values to the left
-of the empty index, shifting all values greater than the temp value to the right, and inserting
+loop. There are three main operations that occur with this method: at the start of a passthru
+the element is removed from the index the pointer is pointing, removed element is stored in a 
+variable temporarily, a comparison between temporary value and values to the left of the empty 
+index, shifting all values greater than the temporary value to the right, and inserting
 the temporary value to the right of the index that holds a value greater than the temporary value.
-1. Define a variable that represents the position of the position of the pointer to be value of the
-for loop's initializer.
+1. Define a variable that represents the position of the position of the pointer to be value of 
+the for loop's initializer.
 2. Define a variable that will temporarily store the value of the index the pointer is currently 
 pointing at.
-3. 
-4. 
+3. Create a for loop and initialize it at 1 index, for the test statement, set a conditional to 
+be true until it reaches the last index of the array and set the iterator to increase the counter
+by one. This for loop is activated when the while loop becomes false. It is responsible of moving 
+the pointer by one at the beginning of every passthru. 
+4. Create a while loop nested inside of the for loop. Once the for loop sets its pointer(starting
+at index 1), the while loop will handle the comparison, shifting and inserting operations
+described above. Repeat the loop if the variable set for the position(for loop pointer) is 
+greater than 0 and the position of the array minus 1 is greater than the value of the temp 
+variable.
 5. 
 
 ### Merge Sort
