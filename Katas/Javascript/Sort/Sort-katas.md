@@ -41,10 +41,12 @@ by one. This for loop is activated when the while loop becomes false. It is resp
 the pointer by one at the beginning of every passthru. 
 4. Create a while loop nested inside of the for loop. Once the for loop sets its pointer(starting
 at index 1), the while loop will handle the comparison, shifting and inserting operations
-described above. Repeat the loop if the variable set for the position(for loop pointer) is 
-greater than 0 and the position of the array minus 1 is greater than the value of the temp 
+described above if the variable set for the position(for loop pointer) is 
+greater than zero and the position of the array minus one is greater than the value of the temp 
 variable.
-5. 
+5. When the condition is true, the code block will execute two assignments, including shifting the value from previous index to the current position, arr[position] = arr[position - 1] and shifting over the pointer to the left by one, position = position - 1;
+6. Once the temp value is greater than the value at the current index, position, the while loop becomes false and the temp value is inserted into the cell at the current index, arr[position] = tempValue.
+7. Return the array when both loops have completed iterating.
 
 ### Merge Sort
 - [documented here](https://guide.freecodecamp.org/algorithms/sorting-algorithms/merge-sort)
