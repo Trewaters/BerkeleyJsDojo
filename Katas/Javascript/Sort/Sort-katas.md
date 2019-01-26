@@ -46,7 +46,7 @@ greater than zero and the position of the array minus one is greater than the va
 variable.
 5. When the condition is true, the code block will execute two assignments, including shifting the value from previous index to the current position, arr[position] = arr[position - 1] and shifting over the pointer to the left by one, position = position - 1;
 6. Once the temp value is greater than the value at the current index, position, the while loop becomes false and the temp value is inserted into the cell at the current index, arr[position] = tempValue.
-7. Return the array when both loops have completed iterating.
+7. Return the array when both loops have completed iterating. 
 
 ### Merge Sort
 - [documented here](https://guide.freecodecamp.org/algorithms/sorting-algorithms/merge-sort)
@@ -61,3 +61,9 @@ variable.
 
 ### Quick Sort
 - [documented here](https://guide.freecodecamp.org/algorithms/sorting-algorithms/quick-sort)
+
+1. Choose an arbitrary number in a given array to be your pivot. The pivot is an element that will be used to determine 
+2. Create a left variable and right variable. The left pointer will compare the value it is pointed at with the pivot. (expand on the function of the left pointer)(add detail about the role of the right pointer)
+3. (detail the swap process)
+4. (describe what is happening with recurssion functionality)
+5. 
