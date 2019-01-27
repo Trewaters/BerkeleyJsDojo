@@ -54,8 +54,9 @@ variable.
 -Create two functions, one that splits up an array until each sub-divided array has a length of 1, and the other sorts and merges the sub-divided arrays.
 1. For the first function, i.e. mergeSort(), add the base case: when the length is one, return the sub-divided array.
 2. Store the middle value of the given array, create an array made up of the elements to the left of the middle value, and create an array made up of elements to the right of the middle value.
-3. 
-4. 
+3. Return a call to the second function, i.e. merge(), with two arguments,
+recursively calling mergeSort(left) and mergeSort(right). 
+4. (Detail the role of the merge function--declared variables, what condition is necessary to swap elements in or to sort them)
 5. 
 
 
