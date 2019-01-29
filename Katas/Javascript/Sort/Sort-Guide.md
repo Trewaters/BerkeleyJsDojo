@@ -40,9 +40,7 @@ Given an array of positive integers, sort the elements using selection sort.
 ```
 let array = [23, 233, 6, 1, 75, 3, 2, 7];
 
-selectionSort(array);
-
-function selectionSort(arr){
+const selectionSort = arr => {
   let tempElement = 0;
   
   for( let i = 0; i < arr.length; i++ ) {
@@ -58,6 +56,8 @@ function selectionSort(arr){
   }  
   console.log(arr);
 }
+
+selectionSort(array);
 ```
 
 ## Insertion Sort
@@ -68,10 +68,10 @@ O(n) | O(n^2) | O(n^2)
 
 Challenge:
 Given an array of positive integers, sort the elements using insertion sort.
-let array = [11, 34, 6, 812, 2, 5, 64, 33];
 ```
-insertion(array);
-function insertion(arr) {
+let array = [11, 34, 6, 812, 2, 5, 64, 33];
+
+const insertion = arr => {
   let length = arr.length;
   for(let i = 1; i < length; i++){
     let tempValue = arr[i];
@@ -84,6 +84,8 @@ function insertion(arr) {
   }
   console.log(arr);
 }
+
+insertion(array);
 ```
 ## Merge Sort
 Time Complexity:
@@ -156,8 +158,7 @@ Given an array of positive integers, sort the elements using quick sort.
 const array = [4, 8, 3, 45, 5, 2, 1, 6];
 let left = 0, right = array.length - 1;
 
-quickSort(array, left, right);
-function quickSort(arr, left, right){
+const quickSort = (arr, left, right) => {
    var len = arr.length, pivot, partitionIndex;
 
 
@@ -172,7 +173,7 @@ function quickSort(arr, left, right){
   console.log(arr);
 }
 
-function partition(arr, pivot, left, right){
+const partition = (arr, pivot, left, right) => {
    var pivotValue = arr[pivot],
        partitionIndex = left;
 
@@ -186,9 +187,11 @@ function partition(arr, pivot, left, right){
   return partitionIndex;
 }
 
-function swap(arr, i, j){
+const swap = (arr, i, j) => {
    var temp = arr[i];
    arr[i] = arr[j];
    arr[j] = temp;
 }
+
+quickSort(array, left, right);
 ```
