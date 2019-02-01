@@ -50,11 +50,19 @@ variable.
 -Create two functions, one that splits up an array until each sub-divided array has a length of 1, and the other sorts and merges the sub-divided arrays.
 1. For the first function, i.e. mergeSort(), add the base case: when the length is one, return the sub-divided array.
 2. Store the middle value of the given array, create an array made up of the elements to the left of the middle value, and create an array made up of elements to the right of the middle value.
-3. Return a call to the second function, i.e. merge(), with two arguments,
-recursively calling mergeSort(left) and mergeSort(right). 
-4. (Detail the role of the merge function--declared variables, what condition is necessary to swap elements in or to sort them)
-5. 
-
+3. Return a call to the second function, i.e. merge(), with two arguments, recursively calling mergeSort(left) and mergeSort(right). 
+4. Define an empty array, result--this array will be used to merge the 
+sorted sub arrays.
+5. Define indexLeft and indexRight variables with a value of zero. These
+variables will act as pointers to the sub arrays.
+6. Create a while loop that returns true if indexLeft is less than the 
+length of the first parameter, left, and indexRight is less than the right
+parameter, right.
+7. Inside the loop, add an if statement that is true if the value from the left array at index indexLeft is less than the value of right array at index
+indexRight.
+8. If the condition is true, push the value of the left array at indexLeft to the result array and increment the value of indexLeft by one.
+9. If the condition is false, push the value of the right array at indexRight to the result array and increment the value of indexRight by one.
+10. If the while loop's boolean value is false, return the concatenatenation of the left array from indexLeft on and the right array from indexRight and on and concatenate that with the result array.
 
 ### Quick Sort
 - [documented here](https://guide.freecodecamp.org/algorithms/sorting-algorithms/quick-sort)
@@ -69,5 +77,5 @@ recursively calling mergeSort(left) and mergeSort(right).
 4. The process repeats itself until both pointers are pointing to the same value and the value is greater than the pivot. Swap this value with 
    the pivot value. P is now in the correct index. Everything to the left, is less than its value and everything to the right is greater than 
    its value.
-5. You can partition the array and treat the values on either side of p as its own sub array.
+5. You can partition the array and treat the values on either side of p as their own sub array.
 6. 
