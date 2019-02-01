@@ -62,13 +62,19 @@ parameter, right.
 indexRight.
 8. If the condition is true, push the value of the left array at indexLeft to the result array and increment the value of indexLeft by one.
 9. If the condition is false, push the value of the right array at indexRight to the result array and increment the value of indexRight by one.
-10. If the while loop's boolean value is false, return the concatenatenation of the left array from indexLeft on and the right array from indexRight and on and concatenate that with the result array.
+10. If the while loop's boolean value is false, return the concatenatenation of the left array from indexLeft on and the right array from indexRight on and concatenate that with the result array.
+
+-Time Complexity and Stack Breakdown
+When it comes to recursion, you're going to deal with function calls on top of function calls or nested calls. Each of these calls
+are added into an internal data structure called execution context or call stack. If you're familiar with stacks, you'll know that the flow of data in and out of it is last in first out(LIFO). For example, lets say we have in our recursion function, we have a total of three recursive calls. The call stack would look something like this: [func(), func(), func()]. If there are multiple calls, such is the case with recursive functions, a call is dependent on its nested call. Therefore, each preceding function is paused until the call ahead of it has completed executing. To complete the execution of each call, we start popping the stack, in this case, we would start with index 3. Once we get a returned value from index 3 call, the call at index 2 can now proceed and complete its execution and so forth.
+
+We can examine this process with merge sort, specifically applying this method with the [13, 2, 56, 4, 1] array.
 
 ### Quick Sort
 - [documented here](https://guide.freecodecamp.org/algorithms/sorting-algorithms/quick-sort)
 -Divide and conquer technique
 
-1. Choose an arbitrary number in a given array to be your pivot. The pivot is an element, p, that will be used to determine 
+1. Choose an arbitrary number in a given array to be your pivot. The pivot is an element, p, that will be used to determine where to partition the array.
 2. Create a left variable and right variable. The left variable will be used as a pointer starting at the left most index of the array.
    It will be used to compare the element at the current index with the element at the pivot. If the left pointer's value is less than
    the pivot value, it will move to the right by one, otherwise, it will stop. The same basic operation happens but in revers. With the right 

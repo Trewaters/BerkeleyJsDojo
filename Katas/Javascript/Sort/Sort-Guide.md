@@ -98,16 +98,17 @@ Given five positive integers, find the minimum and maximum values that can be ca
 
 For example, arr = [1, 3, 5, 7, 0]. Our minimum sum is 1 + 3 + 5 + 7 = 16 and our maximum sum is 3 + 5 + 7 + 9 = 24. We would print: 16 24.
 ```
-let array = [13, 2, 56, 2, 1];
-let array = [6, 5, 10, 2, 1];
+let array = [13, 2, 56, 4, 1];
 
 const mergeSort = sortedArray => {
   if (sortedArray.length === 1) {
     return sortedArray;
   }
   const middle = Math.floor(sortedArray.length / 2);
-  const left = sortedArray.slice(0, middle);
   const right = sortedArray.slice(middle); 
+  const left = sortedArray.slice(0, middle);
+  console.log("left subarray is: ", left + " right subarray is: ", right + " middle is: ", middle);
+  
   return merge(mergeSort(left), mergeSort(right));
 }
 
@@ -115,6 +116,7 @@ const mergeSort = sortedArray => {
   sortedArray;
 
 function merge(left, right) {
+  // console.log("left: ", left + " right: ", right);
   let result = []
   let indexLeft = 0
   let indexRight = 0
@@ -127,7 +129,9 @@ function merge(left, right) {
       result.push(right[indexRight]);
       indexRight++;
     }
+    
   }
+  console.log("result array is: ", result.concat(left.slice(indexLeft)).concat(right.slice(indexRight)));
   return result.concat(left.slice(indexLeft)).concat(right.slice(indexRight));
 }
 
