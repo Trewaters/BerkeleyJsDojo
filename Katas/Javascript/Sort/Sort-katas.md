@@ -68,7 +68,16 @@ indexRight.
 When it comes to recursion, you're going to deal with function calls on top of function calls or nested calls. Each of these calls
 are added into an internal data structure called execution context or call stack. If you're familiar with stacks, you'll know that the flow of data in and out of it is last in first out(LIFO). For example, lets say we have in our recursion function, we have a total of three recursive calls. The call stack would look something like this: [func(), func(), func()]. If there are multiple calls, such is the case with recursive functions, a call is dependent on its nested call. Therefore, each preceding function is paused until the call ahead of it has completed executing. To complete the execution of each call, we start popping the stack, in this case, we would start with index 3. Once we get a returned value from index 3 call, the call at index 2 can now proceed and complete its execution and so forth.
 
-We can examine this process with merge sort, specifically applying this method with the [13, 2, 56, 4, 1] array.
+We can examine this process with merge sort, specifically applying this method with the [13, 2, 56, 4, 1] array. 
+
+Let's work are way thru the each recursive call, starting with the mergeSort(left) half:
+Step 1: For the first call, we get the following return: left = [13, 2], right = [56, 4, 1].
+Step 2: The second call returns left = [13], right = [2].
+
+Now let's work thru the second half recursive call, mergeSort(right):
+Step 1: For the first call, we get the following return: left = [56], right = [4, 1].
+Step 2: The second call returns left = [4], right = [1].
+
 
 ### Quick Sort
 - [documented here](https://guide.freecodecamp.org/algorithms/sorting-algorithms/quick-sort)
