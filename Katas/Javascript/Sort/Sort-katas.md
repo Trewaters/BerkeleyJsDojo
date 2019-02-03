@@ -73,10 +73,18 @@ We can examine this process with merge sort, specifically applying this method w
 Let's work are way thru the each recursive call, starting with the mergeSort(left) half:
 Step 1: For the first call, we get the following return: left = [13, 2], right = [56, 4, 1].
 Step 2: The second call returns left = [13], right = [2].
+***Analysis
+It took two steps to get to return the base case. 
 
 Now let's work thru the second half recursive call, mergeSort(right):
 Step 1: For the first call, we get the following return: left = [56], right = [4, 1].
 Step 2: The second call returns left = [4], right = [1].
+***Analysis
+This recursive call took two steps, which also gives a time complexity of n/2.
+
+---Complete Analysis
+Since were aim to sort half of an array, we can conclude the time complexity for subdividing one half recursively is n/2 steps. Because there are two halves we're working with: mergeSort(left) and mergeSort(right) we arrive at 2(n/2).
+
 
 
 ### Quick Sort
