@@ -107,7 +107,6 @@ const mergeSort = sortedArray => {
   const middle = Math.floor(sortedArray.length / 2);
   const right = sortedArray.slice(middle); 
   const left = sortedArray.slice(0, middle);
-  console.log("left subarray is: ", left + " right subarray is: ", right + " middle is: ", middle);
   
   return merge(mergeSort(left), mergeSort(right));
 }
@@ -116,7 +115,7 @@ const mergeSort = sortedArray => {
   sortedArray;
 
 function merge(left, right) {
-  // console.log("left: ", left + " right: ", right);
+
   let result = []
   let indexLeft = 0
   let indexRight = 0
@@ -131,7 +130,7 @@ function merge(left, right) {
     }
     
   }
-  console.log("result array is: ", result.concat(left.slice(indexLeft)).concat(right.slice(indexRight)));
+
   return result.concat(left.slice(indexLeft)).concat(right.slice(indexRight));
 }
 
@@ -146,7 +145,8 @@ for (let i = 0; i < sortedArray.length - 1; i += 2) {
   max += sortedArray[maxPointer] + sortedArray[maxPointer + 1];
 }
 
-console.log(mini + " " + max);
+console.log(`The sorted array is: ${mergeSort(array)}`);
+console.log(`The minimum sum is: ${mini} || The maximum sum is ${max}`);
 ```
 
 
