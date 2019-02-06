@@ -65,8 +65,7 @@ indexRight.
 10. If the while loop's boolean value is false, return the concatenatenation of the left array from indexLeft on and the right array from indexRight on and concatenate that with the result array.
 
 -Time Complexity and Stack Breakdown
-When it comes to recursion, you're going to deal with function calls on top of function calls or nested calls. Each of these calls
-are added into an internal data structure called execution context or call stack. If you're familiar with stacks, you'll know that the flow of data in and out of it is last in first out(LIFO). For example, lets say we have in our recursion function, we have a total of three recursive calls. The call stack would look something like this: [func(), func(), func()]. If there are multiple calls, such is the case with recursive functions, a call is dependent on its nested call. Therefore, each preceding function is paused until the call ahead of it has completed executing. To complete the execution of each call, we start popping the stack, in this case, we would start with index 3. Once we get a returned value from index 3 call, the call at index 2 can now proceed and complete its execution and so forth.
+When it comes to recursion, you're going to deal with function calls on top of function calls(or nested calls). Each of these calls are added into an internal data structure called execution context or call stack. If you're familiar with stacks, you'll know that the flow of data in and out of it is last in first out(LIFO). For example, lets say we have in our recursion function, we have a total of three recursive calls. The call stack would look something like this: [func(), func(), func()]. If there are multiple calls, such is the case with recursive functions, a call is dependent on its nested call. Therefore, each preceding function is paused until the call ahead of it has completed executing. To complete the execution of each call, we start popping the stack, in this case, we would start with index 3. Once we get a returned value from index 3 call, the call at index 2 can now proceed and complete its execution and so forth.
 
 We can examine this process with merge sort, specifically applying this method with the [13, 2, 56, 4, 1] array. 
 
@@ -83,22 +82,18 @@ Step 2: The second call returns left = [4], right = [1].
 This recursive call took two steps, which also gives a time complexity of n/2.
 
 ---Complete Analysis
-Since were aim to sort half of an array, we can conclude the time complexity for subdividing one half recursively is n/2 steps. Because there are two halves we're working with: mergeSort(left) and mergeSort(right) we arrive at 2(n/2).
-
-
+Since were aim to sort half of an array, we can conclude the time complexity for subdividing one half recursively is n/2 steps. Because there are two halves we're working with: mergeSort(left) and mergeSort(right) we arrive at 2(n/2).(breakdown how we arrive at O(n log n)).
 
 ### Quick Sort
 - [documented here](https://guide.freecodecamp.org/algorithms/sorting-algorithms/quick-sort)
 -Divide and conquer technique
 
 1. Choose an arbitrary number in a given array to be your pivot. The pivot is an element, p, that will be used to determine where to partition the array.
-2. Create a left variable and right variable. The left variable will be used as a pointer starting at the left most index of the array.
-   It will be used to compare the element at the current index with the element at the pivot. If the left pointer's value is less than
-   the pivot value, it will move to the right by one, otherwise, it will stop. The same basic operation happens but in revers. With the right 
-   variable(pointer), moves over to the left by one if the current index' element is greater than the pivot and stops if it is smaller. 
+2. Create a left variable and right variable. The left variable will be used as a pointer starting at the left most index of the array.It will be used to compare the element at the current index with the element at the pivot. If the left pointer's value is less than the pivot value, it will move to the right by one, otherwise, it will stop. The same basic operation happens but in reverse. With the right variable(pointer), moves over to the left by one if the current index' element is greater than the pivot and stops if it is smaller. 
 3. When both pointers have stopped, the left pointer swaps values with the right pointer.
-4. The process repeats itself until both pointers are pointing to the same value and the value is greater than the pivot. Swap this value with 
-   the pivot value. P is now in the correct index. Everything to the left, is less than its value and everything to the right is greater than 
-   its value.
+4. The process repeats itself until both pointers are pointing to the same value and the value is greater than the pivot. Swap this value with the pivot value. P is now in the correct index. Everything to the left, is less than its value and everything to the right is greater than its value.
 5. You can partition the array and treat the values on either side of p as their own sub array.
-6. 
+6. (insert edge case notes here)
+7. (^^specify which step covers quicksort function and which part covers the partition function)
+
+-Time Complexity and Stack Breakdown
