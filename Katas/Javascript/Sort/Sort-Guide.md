@@ -64,7 +64,7 @@ selectionSort(array);
 Time Complexity:
 Worst-Case | Average | Best
 --- | --- | ---
-O(n) | O(n^2) | O(n^2)
+O(n^2) | O(n^2) | O(n)
 
 Challenge:
 Given an array of positive integers, sort the elements using insertion sort.
@@ -164,7 +164,6 @@ let left = 0, right = array.length - 1;
 
 const quickSort = (arr, left, right) => {
    var len = arr.length, pivot, partitionIndex;
-
 
   if(left < right){ // 
     pivot = right;

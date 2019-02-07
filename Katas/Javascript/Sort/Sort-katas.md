@@ -96,4 +96,13 @@ Since were aim to sort half of an array, we can conclude the time complexity for
 6. (insert edge case notes here)
 7. (^^specify which step covers quicksort function and which part covers the partition function)
 
+                                        [4, 8, 3, 45, 5, 2, 1, (6)]  // partition around 6
+                                            /               \
+                                           /                 \
+                           [4, 1, 3, 2, (5)] // partition    [8, 45] 
+                                        /     around 5         \
+                                       /                        \
+                    
+
+
 -Time Complexity and Stack Breakdown
