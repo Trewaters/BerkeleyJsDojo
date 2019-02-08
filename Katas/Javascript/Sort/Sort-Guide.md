@@ -149,7 +149,6 @@ console.log(`The sorted array is: ${mergeSort(array)}`);
 console.log(`The minimum sum is: ${mini} || The maximum sum is ${max}`);
 ```
 
-
 ## Quick Sort
 Time Complexity:
 Worst-Case | Average | Best
@@ -163,38 +162,31 @@ const array = [4, 8, 3, 45, 5, 2, 1, 6];
 let left = 0, right = array.length - 1;
 
 const quickSort = (arr, left, right) => {
-   var len = arr.length, pivot, partitionIndex;
+  let len = arr.length, pivot, partitionIndex;
 
-  if(left < right){ // 
+  if(left < right){
     pivot = right;
     partitionIndex = partition(arr, pivot, left, right);
     
-   //sort left and right
-   quickSort(arr, left, partitionIndex - 1);
-   quickSort(arr, partitionIndex + 1, right);
+    //sort left and right
+    quickSort(arr, left, partitionIndex - 1);
+    quickSort(arr, partitionIndex + 1, right);
   }
-  console.log(arr);
+  return arr;
 }
 
 const partition = (arr, pivot, left, right) => {
-   var pivotValue = arr[pivot],
-       partitionIndex = left;
+   let [pivotValue, partitionIndex] = [arr[pivot], left];
 
-   for(var i = left; i < right; i++){
+   for(let i = left; i < right; i++){
     if(arr[i] < pivotValue){
-      swap(arr, i, partitionIndex);
+      [arr[i], arr[partitionIndex]] = [arr[partitionIndex], arr[i]];  // swap left with partition index
       partitionIndex++;
     }
   }
-  swap(arr, right, partitionIndex);
+  [arr[right], arr[partitionIndex]] = [arr[partitionIndex], arr[right]];   // swap right with partition index
   return partitionIndex;
 }
 
-const swap = (arr, i, j) => {
-   var temp = arr[i];
-   arr[i] = arr[j];
-   arr[j] = temp;
-}
-
-quickSort(array, left, right);
+console.log(quickSort(array, left, right));
 ```
