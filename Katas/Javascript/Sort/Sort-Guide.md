@@ -10,10 +10,9 @@ Given an array, sort the elements using the Bubble sort method.
 
 ```
 const array = [4, 45, 2, 3, 7, 1];
-bubbleSort(array);
 
-function bubbleSort(arr) {
-  let len = arr.length;
+bubbleSort = arr => {
+  const len = arr.length;
   let tempValue = 0;
   for(let i = len - 1; i  >= 0; i--){
     for(let j = 1; j <= i; j++) {  
@@ -25,8 +24,10 @@ function bubbleSort(arr) {
         }
     }
   }
-  console.log(arr);
+  return arr;
 }
+
+console.log(bubbleSort(array));
 ```
 
 ## Selection Sort
@@ -38,7 +39,7 @@ O(n^2) | O(n^2) | O(n^2)
 Challenge:
 Given an array of positive integers, sort the elements using selection sort.
 ```
-let array = [23, 233, 6, 1, 75, 3, 2, 7];
+const array = [23, 233, 6, 1, 75, 3, 2, 7];
 
 const selectionSort = arr => {
   let tempElement = 0;
@@ -69,12 +70,12 @@ O(n^2) | O(n^2) | O(n)
 Challenge:
 Given an array of positive integers, sort the elements using insertion sort.
 ```
-let array = [11, 34, 6, 812, 2, 5, 64, 33];
+const array = [11, 34, 6, 812, 2, 5, 64, 33];
 
 const insertion = arr => {
-  let length = arr.length;
+  const length = arr.length;
   for(let i = 1; i < length; i++){
-    let tempValue = arr[i];
+    const tempValue = arr[i];
     let position = i;
     while(tempValue < arr[position - 1] && position > 0){
       arr[position] = arr[position - 1];
@@ -116,9 +117,8 @@ const mergeSort = sortedArray => {
 
 function merge(left, right) {
 
-  let result = []
-  let indexLeft = 0
-  let indexRight = 0
+  const result = []
+  let [indexLeft, indexRight] = [0, 0];
 
   while (indexLeft < left.length && indexRight < right.length) {
     if (left[indexLeft] < right[indexRight]) {
@@ -128,15 +128,13 @@ function merge(left, right) {
       result.push(right[indexRight]);
       indexRight++;
     }
-    
   }
 
   return result.concat(left.slice(indexLeft)).concat(right.slice(indexRight));
 }
 
-let mini = 0;
-let max = 0;
-let maxShift = 1;
+let [mini, max] = [0, 0];
+const maxShift = 1;
 
 for (let i = 0; i < sortedArray.length - 1; i += 2) {
   let maxPointer = i + maxShift;
