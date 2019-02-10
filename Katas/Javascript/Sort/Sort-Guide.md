@@ -55,10 +55,10 @@ const selectionSort = arr => {
     arr[minIdx] = arr[i];
     arr[i] = tempElement;
   }  
-  console.log(arr);
+  return arr;
 }
 
-selectionSort(array);
+console.log(selectionSort(array));
 ```
 
 ## Insertion Sort
@@ -73,8 +73,8 @@ Given an array of positive integers, sort the elements using insertion sort.
 const array = [11, 34, 6, 812, 2, 5, 64, 33];
 
 const insertion = arr => {
-  const length = arr.length;
-  for(let i = 1; i < length; i++){
+  
+  for(let i = 1; i < arr.length; i++){
     const tempValue = arr[i];
     let position = i;
     while(tempValue < arr[position - 1] && position > 0){
@@ -83,10 +83,10 @@ const insertion = arr => {
     }
     arr[position] = tempValue;
   }
-  console.log(arr);
+  return arr;
 }
 
-insertion(array);
+console.log(insertion(array))
 ```
 ## Merge Sort
 Time Complexity:
@@ -99,7 +99,7 @@ Given five positive integers, find the minimum and maximum values that can be ca
 
 For example, arr = [1, 3, 5, 7, 0]. Our minimum sum is 1 + 3 + 5 + 7 = 16 and our maximum sum is 3 + 5 + 7 + 9 = 24. We would print: 16 24.
 ```
-let array = [13, 2, 56, 4, 1];
+const array = [13, 2, 56, 4, 1];
 
 const mergeSort = sortedArray => {
   if (sortedArray.length === 1) {
@@ -117,7 +117,7 @@ const mergeSort = sortedArray => {
 
 function merge(left, right) {
 
-  const result = []
+  const result = [];
   let [indexLeft, indexRight] = [0, 0];
 
   while (indexLeft < left.length && indexRight < right.length) {
@@ -129,7 +129,6 @@ function merge(left, right) {
       indexRight++;
     }
   }
-
   return result.concat(left.slice(indexLeft)).concat(right.slice(indexRight));
 }
 
@@ -156,11 +155,11 @@ O(n (log(n)) | O(n (log(n)) | O(n^2)
 Challenge:
 Given an array of positive integers, sort the elements using quick sort.
 ```
-const array = [4, 8, 3, 45, 5, 2, 1, 6];
-let left = 0, right = array.length - 1;
+const array = [4, 8, 3, 45, 5, 2, 1, 6],
+     [left, right] = [0, array.length - 1];
 
 const quickSort = (arr, left, right) => {
-  let len = arr.length, pivot, partitionIndex;
+  let pivot, partitionIndex;
 
   if(left < right){
     pivot = right;
