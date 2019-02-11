@@ -100,9 +100,11 @@ Since were aim to sort half of an array, we can conclude the time complexity for
                                             /               \
                                            /                 \
                            [4, 1, 3, 2, (5)] // partition    [8, 45] 
-                                        /     around 5         \
-                                       /                        \
-
-
-
+                                        /     around 5         
+                                       /                        
+                            []
 -Time Complexity and Stack Breakdown
+*Quicksort time complexity: 5 passthroughs over n which is about n/2.
+*Partition time complexity: also 5 passthroughs over n making it n/2.
+
+
