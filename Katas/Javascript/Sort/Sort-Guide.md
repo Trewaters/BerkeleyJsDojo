@@ -156,33 +156,33 @@ Challenge:
 Given an array of positive integers, sort the elements using quick sort.
 ```
 const array = [4, 8, 3, 45, 5, 2, 1, 6],
-     [left, right] = [0, array.length - 1];
-
-const quickSort = (arr, left, right) => {
-  let pivot, partitionIndex;
-
-  if(left < right){
-    pivot = right;
-    partitionIndex = partition(arr, pivot, left, right);
+      [left, right] = [0, array.length - 1];
     
-    //sort left and right
-    quickSort(arr, left, partitionIndex - 1);
-    quickSort(arr, partitionIndex + 1, right);
-  }
-  return arr;
+const quickSort = (arr, left, right) => {
+    let pivot, partitionIndex;
+
+    if(left < right){
+        pivot = right;
+        partitionIndex = partition(arr, pivot, left, right);
+
+        quickSort(arr, left, partitionIndex - 1); // sorts the left partition
+        quickSort(arr, partitionIndex + 1, right); // sorts the right partition
+    }
+    return arr;
 }
 
 const partition = (arr, pivot, left, right) => {
-   let [pivotValue, partitionIndex] = [arr[pivot], left];
+   let [partitionIndex, pivotValue] = [left, arr[pivot]];
 
-   for(let i = left; i < right; i++){
-    if(arr[i] < pivotValue){
-      [arr[i], arr[partitionIndex]] = [arr[partitionIndex], arr[i]];  // swap left with partition index
-      partitionIndex++;
+    // iterates thru the partition
+    for(let i = left; i < right; i++){
+        if(arr[i] < pivotValue){
+            [arr[i], arr[partitionIndex]] = [arr[partitionIndex], arr[i]];  // swap left value with partition index
+            partitionIndex++;
+        }
     }
-  }
-  [arr[right], arr[partitionIndex]] = [arr[partitionIndex], arr[right]];   // swap right with partition index
-  return partitionIndex;
+    [arr[right], arr[partitionIndex]] = [arr[partitionIndex], arr[right]]; // swap right value with partition index
+    return partitionIndex;
 }
 
 console.log(quickSort(array, left, right));
