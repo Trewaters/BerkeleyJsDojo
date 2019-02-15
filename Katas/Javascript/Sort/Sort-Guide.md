@@ -15,12 +15,9 @@ bubbleSort = arr => {
   const len = arr.length;
   let tempValue = 0;
   for(let i = len - 1; i  >= 0; i--){
-    for(let j = 1; j <= i; j++) {  
-        
+    for(let j = 1; j <= i; j++) {        
         if(arr[j-1] > arr[j]) {
-            tempValue = arr[j];
-            arr[j] = arr[j-1];
-            arr[j-1] = tempValue;
+          [arr[j-1], arr[j]] = [arr[j], arr[j-1]];
         }
     }
   }
@@ -51,9 +48,7 @@ const selectionSort = arr => {
         minIdx = index;
       }
     }
-    tempElement = arr[minIdx];
-    arr[minIdx] = arr[i];
-    arr[i] = tempElement;
+    [arr[minIdx], arr[i]] = [arr[i], arr[minIdx]];
   }  
   return arr;
 }
@@ -105,9 +100,9 @@ const mergeSort = sortedArray => {
   if (sortedArray.length === 1) {
     return sortedArray;
   }
-  const middle = Math.floor(sortedArray.length / 2);
-  const right = sortedArray.slice(middle); 
-  const left = sortedArray.slice(0, middle);
+  const middle = Math.floor(sortedArray.length / 2),
+        right = sortedArray.slice(middle); 
+        left = sortedArray.slice(0, middle);
   
   return merge(mergeSort(left), mergeSort(right));
 }
