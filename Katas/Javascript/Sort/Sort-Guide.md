@@ -13,7 +13,6 @@ const array = [4, 45, 2, 3, 7, 1];
 
 bubbleSort = arr => {
   const len = arr.length;
-  let tempValue = 0;
   for(let i = len - 1; i  >= 0; i--){
     for(let j = 1; j <= i; j++) {        
         if(arr[j-1] > arr[j]) {
@@ -40,7 +39,6 @@ const array = [23, 233, 6, 1, 75, 3, 2, 7];
 
 const selectionSort = arr => {
   let tempElement = 0;
-  
   for( let i = 0; i < arr.length; i++ ) {
     let minIdx = i;
     for( let index = i + 1; index < arr.length; index++ ){
@@ -68,15 +66,13 @@ Given an array of positive integers, sort the elements using insertion sort.
 const array = [11, 34, 6, 812, 2, 5, 64, 33];
 
 const insertion = arr => {
-  
   for(let i = 1; i < arr.length; i++){
     const tempValue = arr[i];
     let position = i;
     while(tempValue < arr[position - 1] && position > 0){
-      arr[position] = arr[position - 1];
-      position = position - 1;
+      [arr[position], position] = [arr[position - 1], position - 1]; // shifts value to the right and pointer to the left
     }
-    arr[position] = tempValue;
+    arr[position] = tempValue; 
   }
   return arr;
 }
