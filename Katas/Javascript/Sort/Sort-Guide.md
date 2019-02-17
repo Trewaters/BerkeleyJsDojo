@@ -38,15 +38,14 @@ Given an array of positive integers, sort the elements using selection sort.
 const array = [23, 233, 6, 1, 75, 3, 2, 7];
 
 const selectionSort = arr => {
-  let tempElement = 0;
-  for( let i = 0; i < arr.length; i++ ) {
-    let minIdx = i;
-    for( let index = i + 1; index < arr.length; index++ ){
-      if( arr[minIdx] > arr[index] ){
-        minIdx = index;
+  for(let value of arr){    
+    let [minIdx, i] = [arr.indexOf(value), arr.indexOf(value)];    
+    for(let index = i + 1; index < arr.length; index++ ){
+      if(arr[minIdx] > arr[index]){ // if the index pointer has a value less than value at minIdx pointer...
+        minIdx = index; // ...make minIdx equal to index
       }
     }
-    [arr[minIdx], arr[i]] = [arr[i], arr[minIdx]];
+    [arr[minIdx], arr[i]] = [arr[i], arr[minIdx]];    
   }  
   return arr;
 }
@@ -66,9 +65,9 @@ Given an array of positive integers, sort the elements using insertion sort.
 const array = [11, 34, 6, 812, 2, 5, 64, 33];
 
 const insertion = arr => {
-  for(let i = 1; i < arr.length; i++){
-    const tempValue = arr[i];
-    let position = i;
+  for(let value of arr){
+    const tempValue = value;
+    let position = arr.indexOf(value);
     while(tempValue < arr[position - 1] && position > 0){
       [arr[position], position] = [arr[position - 1], position - 1]; // shifts value to the right and pointer to the left
     }
@@ -77,7 +76,7 @@ const insertion = arr => {
   return arr;
 }
 
-console.log(insertion(array))
+console.log(insertion(array));
 ```
 ## Merge Sort
 Time Complexity:
@@ -107,7 +106,6 @@ const mergeSort = sortedArray => {
   sortedArray;
 
 function merge(left, right) {
-
   const result = [];
   let [indexLeft, indexRight] = [0, 0];
 
@@ -151,7 +149,6 @@ const array = [4, 8, 3, 45, 5, 2, 1, 6],
     
 const quickSort = (arr, left, right) => {
     let pivot, partitionIndex;
-
     if(left < right){
         pivot = right;
         partitionIndex = partition(arr, pivot, left, right);
