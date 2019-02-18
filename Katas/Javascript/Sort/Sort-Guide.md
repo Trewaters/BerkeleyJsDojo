@@ -9,21 +9,19 @@ Challenge:
 Given an array, sort the elements using the Bubble sort method.
 
 ```
-const array = [4, 45, 2, 3, 7, 1];
-
-bubbleSort = arr => {
+function bubbleSort(arr = [4, 45, 2, 3, 7, 1]) {
   const len = arr.length;
   for(let i = len - 1; i  >= 0; i--){
     for(let j = 1; j <= i; j++) {        
-        if(arr[j-1] > arr[j]) {
-          [arr[j-1], arr[j]] = [arr[j], arr[j-1]];
-        }
+      if(arr[j-1] > arr[j]) {
+        [arr[j-1], arr[j]] = [arr[j], arr[j-1]];
+      }
     }
   }
   return arr;
 }
 
-console.log(bubbleSort(array));
+console.log(bubbleSort());
 ```
 
 ## Selection Sort
@@ -35,9 +33,7 @@ O(n^2) | O(n^2) | O(n^2)
 Challenge:
 Given an array of positive integers, sort the elements using selection sort.
 ```
-const array = [23, 233, 6, 1, 75, 3, 2, 7];
-
-const selectionSort = arr => {
+function selectionSort(arr = [23, 233, 6, 1, 75, 3, 2, 7]){
   for(let value of arr){    
     let [minIdx, i] = [arr.indexOf(value), arr.indexOf(value)];    
     for(let index = i + 1; index < arr.length; index++ ){
@@ -50,7 +46,7 @@ const selectionSort = arr => {
   return arr;
 }
 
-console.log(selectionSort(array));
+console.log(selectionSort());
 ```
 
 ## Insertion Sort
@@ -62,9 +58,7 @@ O(n^2) | O(n^2) | O(n)
 Challenge:
 Given an array of positive integers, sort the elements using insertion sort.
 ```
-const array = [11, 34, 6, 812, 2, 5, 64, 33];
-
-const insertion = arr => {
+function insertion(arr = [11, 34, 6, 812, 2, 5, 64, 33]){
   for(let value of arr){
     const tempValue = value;
     let position = arr.indexOf(value);
@@ -76,7 +70,7 @@ const insertion = arr => {
   return arr;
 }
 
-console.log(insertion(array));
+console.log(insertion());
 ```
 ## Merge Sort
 Time Complexity:
