@@ -36,12 +36,12 @@ Given an array of positive integers, sort the elements using selection sort.
 function selectionSort(arr = [23, 233, 6, 1, 75, 3, 2, 7]){
   for(let value of arr){    
     let [minIdx, i] = [arr.indexOf(value), arr.indexOf(value)];    
-    for(let index = i + 1; index < arr.length; index++ ){
+    for(let index = i + 1; index < arr.length; index++){
       if(arr[minIdx] > arr[index]){ // if the index pointer has a value less than value at minIdx pointer...
         minIdx = index; // ...make minIdx equal to index
       }
     }
-    [arr[minIdx], arr[i]] = [arr[i], arr[minIdx]];    
+    [arr[minIdx], arr[i]] = [arr[i], arr[minIdx]]; // swap the value at mimIdx with the value at the first index in the array   
   }  
   return arr;
 }
@@ -79,10 +79,10 @@ Worst-Case | Average | Best
 O(n (log(n)) | O(n (log(n)) | O(n (log(2))
 
 Challenge:
-Given five positive integers, find the minimum and maximum values that can be calculated by summing exactly four of the five integers. Then print the respective minimum and maximum values as a single line of two space-separated long integers.
-
-For example, arr = [1, 3, 5, 7, 0]. Our minimum sum is 1 + 3 + 5 + 7 = 16 and our maximum sum is 3 + 5 + 7 + 9 = 24. We would print: 16 24.
+Given an array of positive integers, sort the elements using merge sort.
 ```
+'use strict';
+
 const array = [13, 2, 56, 4, 1];
 
 const mergeSort = sortedArray => {
@@ -90,7 +90,7 @@ const mergeSort = sortedArray => {
     return sortedArray;
   }
   const middle = Math.floor(sortedArray.length / 2),
-        right = sortedArray.slice(middle); 
+        right = sortedArray.slice(middle),
         left = sortedArray.slice(0, middle);
   
   return merge(mergeSort(left), mergeSort(right));
@@ -115,18 +115,7 @@ function merge(left, right) {
   return result.concat(left.slice(indexLeft)).concat(right.slice(indexRight));
 }
 
-let [mini, max] = [0, 0];
-const maxShift = 1;
-
-for (let i = 0; i < sortedArray.length - 1; i += 2) {
-  let maxPointer = i + maxShift;
-
-  mini += sortedArray[i] + sortedArray[i + 1];
-  max += sortedArray[maxPointer] + sortedArray[maxPointer + 1];
-}
-
 console.log(`The sorted array is: ${mergeSort(array)}`);
-console.log(`The minimum sum is: ${mini} || The maximum sum is ${max}`);
 ```
 
 ## Quick Sort
@@ -155,9 +144,8 @@ const quickSort = (arr, left, right) => {
 
 const partition = (arr, pivot, left, right) => {
    let [partitionIndex, pivotValue] = [left, arr[pivot]];
-
-    // iterates thru the partition
-    for(let i = left; i < right; i++){
+    
+    for(let i = left; i < right; i++){ // iterates thru the partition
         if(arr[i] < pivotValue){
             [arr[i], arr[partitionIndex]] = [arr[partitionIndex], arr[i]];  // swap left value with partition index
             partitionIndex++;
