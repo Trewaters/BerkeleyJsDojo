@@ -1,10 +1,10 @@
 ### Bubble Sort
-⋅⋅*[documented here](https://guide.freecodecamp.org/algorithms/sorting-algorithms/bubble-sort/)
-⋅⋅*Of the five types of sorting algorithms covered in this guide, Bubble sort is the simplest but also the most inefficient. Bubble sort swaps adjacent elements if they are in the wrong order and does so until an entire passthrough is completed without any swaps occuring.
+*[documented here](https://guide.freecodecamp.org/algorithms/sorting-algorithms/bubble-sort/)
+*Of the five types of sorting algorithms covered in this guide, Bubble sort is the simplest but also the most inefficient. Bubble sort swaps adjacent elements if they are in the wrong order and does so until an entire passthrough is completed without any swaps occuring.
 
 ### Selection Sort
-⋅⋅*[documented here](https://guide.freecodecamp.org/algorithms/sorting-algorithms/selection-sort)
-⋅⋅*Description: with this implementation of the selection sort method, you will need two for loops, the nested
+*[documented here](https://guide.freecodecamp.org/algorithms/sorting-algorithms/selection-sort)
+*Description: with this implementation of the selection sort method, you will need two for loops, the nested
 loop will be used as a pointer to check for the lowest value in the array and the outer loop
 will be used to shift the start of the next passthru by one.
 These are the steps to follow:
@@ -25,8 +25,8 @@ the first index with the value of the last index that was set to be the lowest v
 loop's function.
 
 ### Insertion Sort
-⋅⋅*[documented here](https://guide.freecodecamp.org/algorithms/sorting-algorithms/insertion-sort)
-⋅⋅*Description: In this implementation of the insertion sort method, a while loop is nested inside of a for
+*[documented here](https://guide.freecodecamp.org/algorithms/sorting-algorithms/insertion-sort)
+*Description: In this implementation of the insertion sort method, a while loop is nested inside of a for
 loop. There are three main operations that occur with this method: at the start of a passthru
 the element is removed from the index the pointer is pointing, removed element is stored in a 
 variable temporarily, a comparison between temporary value and values to the left of the empty 
@@ -57,8 +57,8 @@ variable.
 7. Return the array when both loops have completed iterating. 
 
 ### Merge Sort
-⋅⋅*[documented here](https://guide.freecodecamp.org/algorithms/sorting-algorithms/merge-sort)
-⋅⋅*Description: Uses the divide and conquer technique. For this sorting method, we will create two functions, one that splits up an array until each sub-divided array has a length of 1, and the other sorts and merges the sub-divided arrays.
+*[documented here](https://guide.freecodecamp.org/algorithms/sorting-algorithms/merge-sort)
+*Description: Uses the divide and conquer technique. For this sorting method, we will create two functions, one that splits up an array until each sub-divided array has a length of 1, and the other sorts and merges the sub-divided arrays.
 
 1. For the first function, i.e. `mergeSort()`, add the base case: when the length is one, return the sub-divided array.
 
@@ -108,8 +108,8 @@ This recursive call took two steps, which also gives a time complexity of n/2.
 Since were aim to sort half of an array, we can conclude the time complexity for subdividing one half recursively is n/2 steps. Because there are two halves we're working with: mergeSort(left) and mergeSort(right) we arrive at 2(n/2).(breakdown how we arrive at O(n log n)).
 
 ### Quick Sort
-⋅⋅*[documented here](https://guide.freecodecamp.org/algorithms/sorting-algorithms/quick-sort)
-⋅⋅*Divide and conquer technique
+*[documented here](https://guide.freecodecamp.org/algorithms/sorting-algorithms/quick-sort)
+*Divide and conquer technique
 
 1. Choose an arbitrary number in a given array to be your pivot. The pivot is an element, p, that will be used to determine where to partition the array.
 
@@ -133,7 +133,7 @@ Since were aim to sort half of an array, we can conclude the time complexity for
                                        /                        
                             
 ######Time Complexity and Stack Breakdown
-⋅⋅*Quicksort time complexity: 5 passthroughs over n which is about n/2.
-⋅⋅*Partition time complexity: also 5 passthroughs over n making it n/2.
+*Quicksort time complexity: 5 passthroughs over n which is about n/2.
+*Partition time complexity: also 5 passthroughs over n making it n/2.
 
 
