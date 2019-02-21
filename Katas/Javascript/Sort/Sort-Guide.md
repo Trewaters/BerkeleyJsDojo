@@ -1,11 +1,11 @@
 # Sort Katas
 ## Bubble Sort
-Time Complexity:
-Worst-Case | Average | Best
---- | --- | ---
-O(n^2) | O(n^2) | O(n)
+*Time Complexity*
+| Worst-Case | Average | Best |
+|:----------:|:-------:|:----:|
+|   O(n^2)   |  O(n^2) | O(n) |
 
-Challenge:
+*Challenge*
 Given an array, sort the elements using the Bubble sort method.
 
 ```
@@ -25,12 +25,12 @@ console.log(bubbleSort());
 ```
 
 ## Selection Sort
-Time Complexity:
-Worst-Case | Average | Best
---- | --- | ---
-O(n^2) | O(n^2) | O(n^2)
+*Time Complexity*
+| Worst-Case | Average | Best |
+|:----------:|:-------:|:----:|
+|   O(n^2)   |  O(n^2) |O(n^2)|
 
-Challenge:
+*Challenge*
 Given an array of positive integers, sort the elements using selection sort.
 ```
 function selectionSort(arr = [23, 233, 6, 1, 75, 3, 2, 7]){
@@ -50,12 +50,12 @@ console.log(selectionSort());
 ```
 
 ## Insertion Sort
-Time Complexity:
-Worst-Case | Average | Best
---- | --- | ---
-O(n^2) | O(n^2) | O(n)
+*Time Complexity*
+| Worst-Case | Average | Best |
+|:----------:|:-------:|:----:|
+|   O(n^2)   |  O(n^2) | O(n) |
 
-Challenge:
+*Challenge*
 Given an array of positive integers, sort the elements using insertion sort.
 ```
 function insertion(arr = [11, 34, 6, 812, 2, 5, 64, 33]){
@@ -73,12 +73,12 @@ function insertion(arr = [11, 34, 6, 812, 2, 5, 64, 33]){
 console.log(insertion());
 ```
 ## Merge Sort
-Time Complexity:
-Worst-Case | Average | Best
---- | --- | ---
-O(n (log(n)) | O(n (log(n)) | O(n (log(2))
+*Time Complexity*
+|  Worst-Case  |   Average    |     Best     |
+|:------------:|:------------:|:------------:|
+| O(n (log(n)) | O(n (log(n)) | O(n (log(2)) |
 
-Challenge:
+*Challenge*
 Given an array of positive integers, sort the elements using merge sort.
 ```
 'use strict';
@@ -119,12 +119,12 @@ console.log(`The sorted array is: ${mergeSort(array)}`);
 ```
 
 ## Quick Sort
-Time Complexity:
-Worst-Case | Average | Best
---- | --- | ---
-O(n (log(n)) | O(n (log(n)) | O(n^2)
+*Time Complexity*
+|  Worst-Case  |   Average    |  Best  |
+|:------------:|:------------:|:------:|
+| O(n (log(n)) | O(n (log(n)) | O(n^2) |
 
-Challenge:
+*Challenge*
 Given an array of positive integers, sort the elements using quick sort.
 ```
 const array = [4, 8, 3, 45, 5, 2, 1, 6],

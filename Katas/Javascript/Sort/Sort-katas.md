@@ -136,4 +136,8 @@ Since were aim to sort half of an array, we can conclude the time complexity for
 *Quicksort time complexity: 5 passthroughs over n which is about n/2.
 *Partition time complexity: also 5 passthroughs over n making it n/2.
 
+######Second Analysis
+This recursive call took two steps, which also gives a time complexity of n/2.
+
+######Complete Analysis
 
