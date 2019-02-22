@@ -83,9 +83,7 @@ Given an array of positive integers, sort the elements using merge sort.
 ```
 'use strict';
 
-const array = [13, 2, 56, 4, 1];
-
-const mergeSort = sortedArray => {
+function mergeSort(sortedArray = [13, 2, 56, 4, 1]){
   if (sortedArray.length === 1) {
     return sortedArray;
   }
@@ -95,9 +93,6 @@ const mergeSort = sortedArray => {
   
   return merge(mergeSort(left), mergeSort(right));
 }
-
-  let sortedArray = mergeSort(array);
-  sortedArray;
 
 function merge(left, right) {
   const result = [];
@@ -115,7 +110,7 @@ function merge(left, right) {
   return result.concat(left.slice(indexLeft)).concat(right.slice(indexRight));
 }
 
-console.log(`The sorted array is: ${mergeSort(array)}`);
+console.log(`The sorted array is: ${mergeSort()}`);
 ```
 
 ## Quick Sort
