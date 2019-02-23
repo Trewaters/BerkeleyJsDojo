@@ -1,9 +1,10 @@
 # Sort Katas
 ## Bubble Sort
 *Time Complexity*
-| Worst-Case | Average | Best |
-|:----------:|:-------:|:----:|
-|   O(n^2)   |  O(n^2) | O(n) |
+
+Worst-Case | Average | Best
+----------|-------|----
+O(n^2)   |  O(n^2) | O(n)
 
 ######Challenge
 Given an array, sort the elements using the Bubble sort method.
