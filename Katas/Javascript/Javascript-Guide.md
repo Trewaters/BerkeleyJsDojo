@@ -1,8 +1,9 @@
 ### Alerts
+
 - [documented here](https://developer.mozilla.org/en-US/docs/Web/API/Window/alert)
-  
-  `window.alert("string-message");` 
-  
+
+  `window.alert("string-message");`
+
   or
 
   ```
@@ -15,20 +16,23 @@
 - `window.confirm('Do you wish to continue?');` will stop the execution of the program and display a confirmation dialog that shows the message provided as an argument, and giving the options of OK or Cancel. It returns the boolean values of true if the user clicks OK, and false if the user clicks Cancel
 
 ### Console object
+
 - [documented here](https://developer.mozilla.org/en-US/docs/Web/API/Console)
 - `console.log("place your important message here for the debugging console")`
 - `console.error` [documented here](https://developer.mozilla.org/en-US/docs/Web/API/Console/error)
 - `console.trace` [documented here](https://developer.mozilla.org/en-US/docs/Web/API/Console/trace) - this one sounded interesting so I added it but I need to experiment and see what it does.
 
 ### Prompt
+
 - [documented here](https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt)
 - `window.prompt('Please enter your name:');` will stop the execution of the program. It displays a dialog that shows a message provided as an argument, as well as an input field that allows the user to enter text. This text is then returned as a string when the user clicks OK. If the user clicks Cancel, null is returned
 
 ### Primitive Data Types
+
 - [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
 - Numbers
   - cover NaN (not a number)
-- Strings 
+- Strings
   - cover escaping characters \' & \" & \t & \n \\ & unicode-emojis
   - string methods length, indexing with .charAt or console.log("Hello"[0])
 - Booleans
@@ -41,10 +45,11 @@
   - [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
 
 ### Conditionals (Comparison & Logical Operators)
+
 - Ternary Operators, [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
   - Syntax: `condition ? value if true : value if false`
 - Switch Statements, [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)
-  - Syntax: 
+  - Syntax:
   ```
   switch(expression){
     case value1:
@@ -63,8 +68,8 @@
   - Syntax: `if( x ){}`
 - ElseIf
   - Syntax: `if( x ){}else{}`
-  - Syntax: 
-  ```javascript 
+  - Syntax:
+  ```javascript
   if( x ){
     // code something
   }elseif( y ){
@@ -86,7 +91,7 @@
 
 ```javascript
 for (var i = 0; i < 10; i++) {
-	console.log("We are on iteration number: " + i);
+  console.log("We are on iteration number: " + i);
 }
 ```
 
@@ -169,56 +174,126 @@ while (userInput !== "STOP") {
 #### Array, For Each Loop
 
 ```javascript
-var dogs =  ["pomeranian","corgi", "shih tzu"];
-dogs.forEach(
-  function(dog) { 			// dog is a parameter name used
-    dog = dog + "s";  	// to represent each item 
+var dogs = ["pomeranian", "corgi", "shih tzu"];
+dogs.forEach(function(dog) {
+  // dog is a parameter name used
+  dog = dog + "s"; // to represent each item
 });
-console.log(dogs);					          // One thing to note: a forEach loop
-["pomeranian","corgi", "shih tzu"];  	// does not change the original array!
+console.log(dogs); // One thing to note: a forEach loop
+["pomeranian", "corgi", "shih tzu"]; // does not change the original array!
 ```
 
+#### Maps
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map
+
+#### Filter
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+
 ### Objects
-object documentation [here](https://javascript.info/object)
+
+object documentation [here](https://javascript.info/object), [and here](https://www.tutorialspoint.com/javascript/javascript_objects.htm)
 
 ```javascript
 var movie = {
- 	"name": "Star Wars",
- 	"year": 1977,
- 	"director": "George Lucas",
- 	"hasSequel": true,
- 	"imdb": "http://www.imdb.com/title/tt0076759/"
-}
+  name: "Star Wars",
+  year: 1977,
+  director: "George Lucas",
+  hasSequel: true,
+  imdb: "http://www.imdb.com/title/tt0076759/"
+};
 ```
 
-- keyword delete will remove the property
-
-`delete OBJECT.PROPERTY`
+- keyword delete will remove the property, `delete OBJECT.PROPERTY`
 
 - dot notation Object.KEY
 - bracket notation OBJECT["KEY"]
+- `for...in` loops
+- `Object.keys(x)` returns array of properties
+- `Object.getOwnPropertyNames(x)` array of all own properties' name
+- `Object.values(x)` return array of property values
 
 ### HTML Forms using JavaScript
+
 - reference for forms ( https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Sending_forms_through_JavaScript )
 
 ### String (look here for more examples of strings https://www.w3schools.com/js/js_string_methods.asp )
+
 - `.length` returns the length of the string [documented here]()
 - `.indexOf()` returns the index of the first occurrence of text in a string [documented here]()
 - `.lastIndexOf()` returns the index of the last occurrence of text in a string [documented here]()
 - `.search()` returns the position of the matching string. Plus can use regular expressions. [documented here]()
 - `.slice()` extracts part of a string and treturns the extracted part in a new string. Parameters are the start position and the end position. [documented here]()
 - `.split()` converts string to an array. [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
+
 ```javascript
 var str = "The quick brown fox jumped over the lazy dog.";
 
-var words = str.split(' ');
+var words = str.split(" ");
 console.log(words);
 // expected output: ["The", "quick", "brown", "fox", "jumped", "over", "the", "lazy", "dog."]
 ```
+
 - `` [documented here]()
 
 ### Set
 
 ### Weak Set
 
-### Maps
+# Position solutions
+
+## Position 1: Reverse an Array
+
+- Option 1
+```javascript
+let originalArray = [1,2,3,4];
+
+function reverseArr (vArray){
+    let newArray = [];
+    let vArrLen = vArray.length;
+    for (var i = 0; i<vArrLen; i++){
+        newArray[i] = vArray.pop();
+    };
+    return newArray;
+};
+
+console.log(reverseArr(originalArray));
+```
+
+- Option 2
+
+## Position 2: Build an Object
+
+```javascript
+function buildObj(vNum) {
+  var obj = {};
+  for (i = 0; i <= vNum; i++) {
+    obj[i] = i * 1000;
+  }
+  return obj;
+}
+
+console.log("keys only..." + Object.keys(buildObj(6)));
+console.log("values only..." + Object.values(buildObj(6)));
+```
+
+## Position 3: Loop through Object
+
+[solution author](https://stackoverflow.com/questions/15690706/recursively-looping-through-an-object-to-build-a-property-list)
+
+```javascript
+function iterate(obj, stack) {
+  for (var property in obj) {
+    if (obj.hasOwnProperty(property)) {
+      if (typeof obj[property] == "object") {
+        iterate(obj[property], stack + "." + property);
+      } else {
+        console.log(property + " " + obj[property]);
+        console.log(stack + "." + property); // added this so it was easier to read.
+      }
+    }
+  }
+}
+iterate(response, "");
+```

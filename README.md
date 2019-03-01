@@ -26,7 +26,13 @@ The goal of the Berkeley JavaScript Dojo is to show Sifus how they can improve t
 - WORK... Work on your belts. Get a white belt from the Dojo.
 
 ## Katas
-Patterns that help you deepen your programming knowledge. Katas are broken into a few categories designated by a sub-folder.
+Patterns that help you deepen your programming knowledge. Katas are broken into a few categories designated by a sub-folder. Each kata folder has a `...-Guide.md`, `...-katas.md`, and a `...-Fundamentals.md` file in it.
+
+**Folder Contents**
+- `...-katas.md` - These files have the coding katas. No code just a description of what is expected from the sifu.
+- `...-Guide.md` - The guide files will pair with the katas exactly and give hints and code on how to solve the kata. There can be multiple answers for the same kata. Only one is listed in the guide. If you would like to add yours to the guide make a pull request for it.
+- `...-Fundamentals.md` - The fundamentals file has some notes about how the language works. These are document level based bits of information. I use this as a cheat sheet for the language, reminding me about things quickly so I can keep coding.
+
 - Angular - the file in the folder doesn't have 2 lines of information. Not even really started.
 - GitHub - I have spent the most work on this set of katas.
 - MongoDB - empty at the moment.

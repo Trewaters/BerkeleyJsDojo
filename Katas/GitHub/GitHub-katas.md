@@ -60,3 +60,9 @@
   - View all branches, including those from upstream
 - Checkout your master and merge the upstream repo master
 - Create a branch
+
+### Position 7: Remove current commit history
+- Remove the history from a commit so that your branch is only showing 1 commit.
+
+### Position 8: Move commit to a new branch
+- Move your last commit to a new branch and reset your original branch to the state it was before the last change.

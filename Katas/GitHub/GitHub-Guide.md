@@ -40,6 +40,8 @@
   - In order to delete remote branches use this `git branch -d -r origin/<FEATURE_X>`. [doc explanation](https://git-scm.com/docs/git-branch)
 - `git push origin <branch>` – branch is unavailable until it is pushed to remote repository
 - `git branch -m <OLD-BRANCH-NAME> <NEW-BRANCH-NAME>` - rename branch
+- `git push origin --delete <BRANCH-NAME>` delete remote branch
+- `git branch --delete <BRANCH-NAME>` delete local branch
 
 - `git log --oneline --decorate` see the current HEAD Branch. or `git log --oneline --decorate --graph --all` see all the commits and where the pointers are.
 - `git log -1 --format="%an %ae%n%cn %ce` SHA_HASH
@@ -115,17 +117,18 @@ Using [Visual Git Guide](http://marklodato.github.io/visual-git-guide/index-en.h
 ### ADD- forks
 
 - [working with forks](https://help.github.com/articles/working-with-forks/)
-- Configuring a remote for a fork
+- Fork the repo from github.
+- Configuring remotes.
 
-```
+```git
 git remote -v
-git remote add upstream <CLONE>
+git remote add upstream <ORIGINAL-REPOSITORY>
 git remote -v
 ```
 
-- Syncing fork
+- Syncing fork.
 
-```
+```git
 git fetch upstream
 git checkout master
 git merge upstream/master
@@ -229,3 +232,13 @@ git merge upstream/master
   - `git checkout master`
   - `git branch newfeature`
   - `git checkout newfeature`
+
+### Position 7: Remove current commit history
+1. `git checkout --orphan temp_branch`
+2. `git add -A`
+3. `git commit -am "INITIALIZE"`
+4. `git branch -D master`
+5. `git branch -m master`
+6. `git push -f origin master`
+
+### Position 8: Move commit to a new branch
