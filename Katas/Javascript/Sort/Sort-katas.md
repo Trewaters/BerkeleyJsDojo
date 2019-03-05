@@ -1,8 +1,10 @@
-### Bubble Sort
+# Sort Katas
+
+## Position #1: Bubble Sort
 *[documented here](https://guide.freecodecamp.org/algorithms/sorting-algorithms/bubble-sort/)
 *Of the five types of sorting algorithms covered in this guide, Bubble sort is the simplest but also the most inefficient. Bubble sort swaps adjacent elements if they are in the wrong order and does so until an entire passthrough is completed without any swaps occuring.
 
-### Selection Sort
+## Position #2: Selection Sort
 *[documented here](https://guide.freecodecamp.org/algorithms/sorting-algorithms/selection-sort)
 *Description: with this implementation of the selection sort method, you will need two for loops, the nested
 loop will be used as a pointer to check for the lowest value in the array and the outer loop
@@ -24,7 +26,7 @@ the first index with the value of the last index that was set to be the lowest v
 5. The start of subsequent passthrus will shift incrementally by one. That will be the outer 
 loop's function.
 
-### Insertion Sort
+## Position #3: Insertion Sort
 *[documented here](https://guide.freecodecamp.org/algorithms/sorting-algorithms/insertion-sort)
 *Description: In this implementation of the insertion sort method, a while loop is nested inside of a for
 loop. There are three main operations that occur with this method: at the start of a passthru
@@ -56,7 +58,7 @@ variable.
 
 7. Return the array when both loops have completed iterating. 
 
-### Merge Sort
+## Position #4: Merge Sort
 *[documented here](https://guide.freecodecamp.org/algorithms/sorting-algorithms/merge-sort)
 *Description: Uses the divide and conquer technique. For this sorting method, we will create two functions, one that splits up an array until each sub-divided array has a length of 1, and the other sorts and merges the sub-divided arrays.
 
@@ -85,7 +87,7 @@ indexRight.
 
 10. If the while loop's boolean value is false, return the concatenatenation of the left array from indexLeft on and the right array from indexRight on and concatenate that with the result array.
 
-######Time Complexity and Stack Breakdown
+### Time Complexity and Stack Breakdown
 When it comes to recursion, you're going to deal with function calls on top of function calls(or nested calls). Each of these calls are added into an internal data structure called execution context or call stack. If you're familiar with stacks, you'll know that the flow of data in and out of it is last in first out(LIFO). For example, lets say we have in our recursion function, we have a total of three recursive calls. The call stack would look something like this: `[func(), func(), func()]`. If there are multiple calls, such is the case with recursive functions, a call is dependent on its nested call. Therefore, each preceding function is paused until the call ahead of it has completed executing. To complete the execution of each call, we start popping the stack, in this case, we would start with index 3. Once we get a returned value from index 3 call, the call at index 2 can now proceed and complete its execution and so forth.
 
 We can examine this process with merge sort, specifically applying this method with the `[13, 2, 56, 4, 1]` array. 
@@ -94,26 +96,27 @@ Let's work are way thru the each recursive call, starting with the mergeSort(lef
 Step 1: For the first call, we get the following return: `left = [13, 2]`, `right = [56, 4, 1]`.
 Step 2: The second call returns `left = [13]`, `right = [2]`.
 
-######First Analysis
+### First Analysis
 It took two steps to get to return the base case. 
 
 Now let's work thru the second half recursive call, mergeSort(right):
 Step 1: For the first call, we get the following return: `left = [56]`, `right = [4, 1]`.
 Step 2: The second call returns `left = [4]`, `right = [1]`.
 
-######Second Analysis
+### Second Analysis
 This recursive call took two steps, which also gives a time complexity of n/2.
 
-######Complete Analysis
+### Complete Analysis
 Since were aim to sort half of an array, we can conclude the time complexity for subdividing one half recursively is n/2 steps. Because there are two halves we're working with: mergeSort(left) and mergeSort(right) we arrive at 2(n/2).(breakdown how we arrive at O(n log n)).
 
-### Quick Sort
-*[documented here](https://guide.freecodecamp.org/algorithms/sorting-algorithms/quick-sort)
-*Divide and conquer technique
+## Position #5: Quick Sort
+[Quick sort documentation](https://guide.freecodecamp.org/algorithms/sorting-algorithms/quick-sort)
+
+**Divide and conquer technique**
 
 1. Choose an arbitrary number in a given array to be your pivot. The pivot is an element, p, that will be used to determine where to partition the array.
 
-2. Create a left variable and right variable. The left variable will be used as a pointer starting at the left most index of the array.It will be used to compare the element at the current index with the element at the pivot. If the left pointer's value is less than the pivot value, it will move to the right by one, otherwise, it will stop. The same basic operation happens but in reverse. With the right variable(pointer), moves over to the left by one if the current index' element is greater than the pivot and stops if it is smaller. 
+2. Create a left variable and right variable. The left variable will be used as a pointer starting at the left most index of the array. It will be used to compare the element at the current index with the element at the pivot. If the left pointer's value is less than the pivot value, it will move to the right by one, otherwise, it will stop. The same basic operation happens but in reverse with the right variable (pointer). The right variable (pointer) moves over to the left by one if the current index' element is greater than the pivot and stops if it is smaller. 
 
 3. When both pointers have stopped, the left pointer swaps values with the right pointer.
 
@@ -132,12 +135,11 @@ Since were aim to sort half of an array, we can conclude the time complexity for
                                         /     around 5         
                                        /                        
                             
-######Time Complexity and Stack Breakdown
-*Quicksort time complexity: 5 passthroughs over n which is about n/2.
-*Partition time complexity: also 5 passthroughs over n making it n/2.
+### Time Complexity and Stack Breakdown
+**Quicksort time complexity**: 5 passthroughs over n which is about n/2.
+**Partition time complexity**: also 5 passthroughs over n making it n/2.
 
-######Second Analysis
+### Second Analysis
 This recursive call took two steps, which also gives a time complexity of n/2.
 
-######Complete Analysis
-
+### Complete Analysis

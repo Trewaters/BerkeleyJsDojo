@@ -1,3 +1,5 @@
+# GitHub Fundamentals
+
 ### Create a new directory
 
 - `git init`

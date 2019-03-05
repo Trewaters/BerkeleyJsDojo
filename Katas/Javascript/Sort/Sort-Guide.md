@@ -1,15 +1,16 @@
-# Sort Katas
-## Bubble Sort
+# Sort Guide
+
+## Position #1: Bubble Sort
 *Time Complexity*
 
 Worst-Case | Average | Best
 ----------|-------|----
 O(n^2)   |  O(n^2) | O(n)
 
-######Challenge
+### Challenge
 Given an array, sort the elements using the Bubble sort method.
 
-```
+```javascript
 function bubbleSort(arr = [4, 45, 2, 3, 7, 1]) {
   const len = arr.length;
   for(let i = len - 1; i  >= 0; i--){
@@ -21,19 +22,19 @@ function bubbleSort(arr = [4, 45, 2, 3, 7, 1]) {
   }
   return arr;
 }
-
 console.log(bubbleSort());
 ```
 
-## Selection Sort
+## Position #2: Selection Sort
 *Time Complexity*
-| Worst-Case | Average | Best |
-|:----------:|:-------:|:----:|
-|   O(n^2)   |  O(n^2) |O(n^2)|
 
-######Challenge
+Worst-Case | Average | Best
+----------|-------|----
+O(n^2)   |  O(n^2) |O(n^2)
+
+### Challenge
 Given an array of positive integers, sort the elements using selection sort.
-```
+```javascript
 function selectionSort(arr = [23, 233, 6, 1, 75, 3, 2, 7]){
   for(let value of arr){    
     let [minIdx, i] = [arr.indexOf(value), arr.indexOf(value)];    
@@ -46,19 +47,20 @@ function selectionSort(arr = [23, 233, 6, 1, 75, 3, 2, 7]){
   }  
   return arr;
 }
-
 console.log(selectionSort());
 ```
 
-## Insertion Sort
-*Time Complexity*
-| Worst-Case | Average | Best |
-|:----------:|:-------:|:----:|
-|   O(n^2)   |  O(n^2) | O(n) |
+## Position #3: Insertion Sort
 
-######Challenge
+*Time Complexity*
+
+ Worst-Case | Average | Best
+----------|-------|----
+O(n^2)   |  O(n^2) | O(n)
+
+### Challenge
 Given an array of positive integers, sort the elements using insertion sort.
-```
+```javascript
 function insertion(arr = [11, 34, 6, 812, 2, 5, 64, 33]){
   for(let value of arr){
     const tempValue = value;
@@ -70,18 +72,22 @@ function insertion(arr = [11, 34, 6, 812, 2, 5, 64, 33]){
   }
   return arr;
 }
-
 console.log(insertion());
 ```
-## Merge Sort
-*Time Complexity*
-|  Worst-Case  |   Average    |     Best     |
-|:------------:|:------------:|:------------:|
-| O(n (log(n)) | O(n (log(n)) | O(n (log(2)) |
 
-######Challenge
+## Position #4: Merge Sort
+
+*Time Complexity*
+
+  Worst-Case  |   Average    |     Best
+------------|------------|------------
+O(n (log(n)) | O(n (log(n)) | O(n (log(2))
+
+### Challenge
+
 Given an array of positive integers, sort the elements using merge sort.
-```
+
+```javascript
 'use strict';
 
 function mergeSort(sortedArray = [13, 2, 56, 4, 1]){
@@ -110,19 +116,21 @@ function merge(left, right) {
   }
   return result.concat(left.slice(indexLeft)).concat(right.slice(indexRight));
 }
-
 console.log(`The sorted array is: ${mergeSort()}`);
 ```
 
-## Quick Sort
-*Time Complexity*
-|  Worst-Case  |   Average    |  Best  |
-|:------------:|:------------:|:------:|
-| O(n (log(n)) | O(n (log(n)) | O(n^2) |
+## Position #5: Quick Sort
 
-*Challenge*
+*Time Complexity*
+
+ Worst-Case  |   Average    |  Best
+------------|------------|------
+O(n (log(n)) | O(n (log(n)) | O(n^2)
+
+### Challenge
+
 Given an array of positive integers, sort the elements using quick sort.
-```
+```javascript
 const array = [4, 8, 3, 45, 5, 2, 1, 6],
       [left, right] = [0, array.length - 1];
     
