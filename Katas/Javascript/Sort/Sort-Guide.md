@@ -77,13 +77,13 @@ console.log(insertion());
 
 ## Position #4: Merge Sort
 
-*Time Complexity*
+**Time Complexity**
 
   Worst-Case  |   Average    |     Best
 ------------|------------|------------
 O(n (log(n)) | O(n (log(n)) | O(n (log(2))
 
-### Challenge
+**Challenge**
 
 Given an array of positive integers, sort the elements using merge sort.
 
@@ -121,15 +121,16 @@ console.log(`The sorted array is: ${mergeSort()}`);
 
 ## Position #5: Quick Sort
 
-*Time Complexity*
+**Time Complexity**
 
  Worst-Case  |   Average    |  Best
 ------------|------------|------
 O(n (log(n)) | O(n (log(n)) | O(n^2)
 
-### Challenge
+**Challenge**
 
 Given an array of positive integers, sort the elements using quick sort.
+
 ```javascript
 const array = [4, 8, 3, 45, 5, 2, 1, 6],
       [left, right] = [0, array.length - 1];

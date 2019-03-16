@@ -44,6 +44,8 @@ Programming riddles to ponder. Expand your perspective and hopefully become enli
 ## Meetings
 Sifu notes taken during the meeting. Make your notes helpful to others reading them in the future. Think of this like Open Source documentation. It is a great practice.
 
+Add presentations from speakers to `Presentations` folder for others to see later.
+
 ## Projects
 Folder of code projects that Berkeley JavaScript Dojo ( BJD ) has worked on. Projects in this section have a "project lead". These project were merged into the list by the "Sifu 'Root'".
 

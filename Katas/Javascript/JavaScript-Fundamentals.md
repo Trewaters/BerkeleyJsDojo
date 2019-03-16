@@ -49,7 +49,7 @@
 ### Conditionals (Comparison & Logical Operators)
 
 - Ternary Operators, [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
-  - Syntax: `condition ? value if true : value if false`
+  - Syntax: `(condition) ? value if true : value if false;`
 - Switch Statements, [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)
   - Syntax:
   ```
