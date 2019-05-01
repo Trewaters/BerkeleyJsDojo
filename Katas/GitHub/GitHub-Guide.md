@@ -94,3 +94,12 @@
 6. `git push -f origin master`
 
 ## Position 8: Move commit to a new branch
+
+
+### Position 9: Create a GitHub Repo starting with local files
+- Create a new repository on GitHub.
+- Initialize local directory as a Git repository.
+- Copy GitHub repository's URL
+- `git remote add origin <REMOTE_REPOSITORY_URL>`
+- `git remote -v` to verify
+- `git push origin master`

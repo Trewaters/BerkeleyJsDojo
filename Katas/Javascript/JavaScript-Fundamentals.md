@@ -1,50 +1,32 @@
 # JavaScript Fundamentals
 
-### Alerts
-
-- [documented here](https://developer.mozilla.org/en-US/docs/Web/API/Window/alert)
-
-  `window.alert("string-message");`
-
-  or
-
-  ```
-  function alertTest (){
-    alert("Warning... ah-ooga...All hands on deck! \nSwirly thing alert! \nGo to Blue Alert (directive 34124)... Step up Red Alert?")
-  }
-  ```
-
-- `window.alert('Hello');` will pause the execution of the program and display a message in a dialog box. The message is provided as an argument to the method, and undefined is always returned:
-- `window.confirm('Do you wish to continue?');` will stop the execution of the program and display a confirmation dialog that shows the message provided as an argument, and giving the options of OK or Cancel. It returns the boolean values of true if the user clicks OK, and false if the user clicks Cancel
-
-### Console object
-
-- [documented here](https://developer.mozilla.org/en-US/docs/Web/API/Console)
-- `console.log("place your important message here for the debugging console")`
-- `console.error` [documented here](https://developer.mozilla.org/en-US/docs/Web/API/Console/error)
-- `console.trace` [documented here](https://developer.mozilla.org/en-US/docs/Web/API/Console/trace) - this one sounded interesting so I added it but I need to experiment and see what it does.
-
-### Prompt
-
-- [documented here](https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt)
-- `window.prompt('Please enter your name:');` will stop the execution of the program. It displays a dialog that shows a message provided as an argument, as well as an input field that allows the user to enter text. This text is then returned as a string when the user clicks OK. If the user clicks Cancel, null is returned
-
 ### Primitive Data Types
 
 - [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
-- Numbers
-  - cover NaN (not a number)
-- Strings
-  - cover escaping characters \' & \" & \t & \n \\ & unicode-emojis
-  - string methods length, indexing with .charAt or console.log("Hello"[0])
 - Booleans
 - Null
-- Undefined
+- `undefined`
+- Numbers
+  - cover NaN (not a number)
+- String
+  - cover escaping characters \' & \" & \t & \n \\ & unicode-emojis
+  - string methods length, indexing with .charAt or console.log("Hello"[0])
 - Symbols (new in ECMAScript 6)
 - Objects
-- Arrays ???
-- `typeof` operator
+- use `typeof` operator to discover type
   - [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
+```javascript
+typeof "John"
+typeof 3.14
+typeof NaN
+typeof false
+typeof [1,2,3,4]
+typeof {name: 'John', age:34}
+typeof new Date()
+typeof function(){}
+typeof mycar
+typeof null
+```
 
 ### Conditionals (Comparison & Logical Operators)
 
@@ -127,7 +109,7 @@ while (userInput !== "STOP") {
 
   `numArray.slice(2,4);`
 
-- `.splice()` removes items from an array then inserts new items in their place [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
+- `.splice()` removes items from an array then inserts new items in their place. Changes the original array. [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
 
   `numArray.splice(3,1,"Three Thousand");`
 
@@ -135,11 +117,11 @@ while (userInput !== "STOP") {
 
   `numArray.length;`
 
-- `.pop()` remove the last item from an array [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)
+- `.pop()` remove the last item from an array. Returns the removed element. [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)
 
   `numArray.pop();`
 
-- `.shiftf()` removes the first item in the array [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift)
+- `.shift()` removes the first item in the array [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift)
 
   `numArray.shift();`
 
@@ -173,7 +155,7 @@ while (userInput !== "STOP") {
 
   `numArray.includes("Three");`
 
-#### Array, For Each Loop
+#### Array, forEach
 
 ```javascript
 var dogs = ["pomeranian", "corgi", "shih tzu"];
@@ -184,6 +166,9 @@ dogs.forEach(function(dog) {
 console.log(dogs); // One thing to note: a forEach loop
 ["pomeranian", "corgi", "shih tzu"]; // does not change the original array!
 ```
+
+#### Array, reduce
+
 
 #### Maps
 
@@ -197,7 +182,16 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 
 object documentation [here](https://javascript.info/object), [and here](https://www.tutorialspoint.com/javascript/javascript_objects.htm)
 
+**6 types of objects**
+- Object
+- Date
+- Array
+- String
+- Number
+- Boolean
+
 ```javascript
+// example of an object
 var movie = {
   name: "Star Wars",
   year: 1977,
@@ -223,10 +217,10 @@ var movie = {
 ### String (look here for more examples of strings https://www.w3schools.com/js/js_string_methods.asp )
 
 - `.length` returns the length of the string [documented here]()
-- `.indexOf()` returns the index of the first occurrence of text in a string [documented here]()
+- `.indexOf()` returns the index of the first occurrence of text in a string [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf)
 - `.lastIndexOf()` returns the index of the last occurrence of text in a string [documented here]()
 - `.search()` returns the position of the matching string. Plus can use regular expressions. [documented here]()
-- `.slice()` extracts part of a string and treturns the extracted part in a new string. Parameters are the start position and the end position. [documented here]()
+- `.slice()` extracts part of a string and returns the extracted part in a new string. Parameters are the start position and the end position. [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice)
 - `.split()` converts string to an array. [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
 
 ```javascript
@@ -239,6 +233,58 @@ console.log(words);
 
 - `` [documented here]()
 
-### Set
+### Converting Data Types
+- "Implicit Conversion" or "type coersion", [blog post](https://hackernoon.com/understanding-js-coercion-ff5684475bfc), [documented on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)
+- Convert value to string
+```javascript
+String(1999);
+// or
+val.toString()
+```
+- Convert value to number
+```javascript
+Number("1999");
+Number(false); // return 0
+Number(true); // return 1
+Number("Ten") // return NaN
+```
+- Convert value to Booleans
+```javascript
+// falsy values
+Boolean(0);
+Boolean("");
+Boolean(undefined);
+Boolean(NaN);
+Boolean(null);
+Boolean("false"); // return true
+```
 
-### Weak Set
+### Alerts
+
+- [documented here](https://developer.mozilla.org/en-US/docs/Web/API/Window/alert)
+
+  `window.alert("string-message");`
+
+  or
+
+  ```
+  function alertTest (){
+    alert("Warning... ah-ooga...All hands on deck! \nSwirly thing alert! \nGo to Blue Alert (directive 34124)... Step up Red Alert?")
+  }
+  ```
+
+- `window.alert('Hello');` will pause the execution of the program and display a message in a dialog box. The message is provided as an argument to the method, and undefined is always returned:
+- `window.confirm('Do you wish to continue?');` will stop the execution of the program and display a confirmation dialog that shows the message provided as an argument, and giving the options of OK or Cancel. It returns the boolean values of true if the user clicks OK, and false if the user clicks Cancel
+
+### Prompt
+
+- [documented here](https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt)
+- `window.prompt('Please enter your name:');` will stop the execution of the program. It displays a dialog that shows a message provided as an argument, as well as an input field that allows the user to enter text. This text is then returned as a string when the user clicks OK. If the user clicks Cancel, null is returned
+
+### Console object
+
+- [documented here](https://developer.mozilla.org/en-US/docs/Web/API/Console)
+- `console.log("place your important message here for the debugging console")`
+- `console.error` [documented here](https://developer.mozilla.org/en-US/docs/Web/API/Console/error)
+- `console.trace` [documented here](https://developer.mozilla.org/en-US/docs/Web/API/Console/trace) - this one sounded interesting so I added it but I need to experiment and see what it does.
+

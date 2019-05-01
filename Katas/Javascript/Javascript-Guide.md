@@ -54,3 +54,25 @@ function iterate(obj, stack) {
 }
 iterate(response, "");
 ```
+
+## Position 5: Print Multiplication table
+let yNum: number = 12;
+let xStr: string = "";
+let yStr: string = "";
+
+for(let y: number = 1; y <= yNum; y++){
+    if(y == 1){
+        yStr = "Table";
+        for(let j = 1;j<=yNum;j++){
+            yStr += `\t${j}`
+        }
+        console.log(yStr);
+        continue;
+    };
+
+    xStr = `${y} x\t`;
+    for(let xNum: number = 1; xNum <= yNum; xNum++){
+        xStr += `${y * xNum}\t`;
+    };
+    console.log(xStr);
+}

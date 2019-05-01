@@ -88,7 +88,8 @@
 
 - `git reset --hard [HEAD]` completely remove all staged and unstaged changes to tracked files
 - `git clean [-f]` - Remove files that are not tracked
-- `git checkout .` - undo all changes in my working tree
+- `git checkout .` - undo all changes in my working tree. Kind of a rewind
+- errors while trying to switch. Maybe committed changes. Try `git stash` [documentation](https://git-scm.com/docs/git-stash) then `git checkout <BRANCH>`
 
 ### Status
 

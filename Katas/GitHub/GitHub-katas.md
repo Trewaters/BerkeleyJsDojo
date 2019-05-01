@@ -66,3 +66,6 @@
 
 ### Position 8: Move commit to a new branch
 - Move your last commit to a new branch and reset your original branch to the state it was before the last change.
+
+### Position 9: Create a GitHub Repo starting with local files
+- Create a new GitHub repo from a project that was started on your local machine.
