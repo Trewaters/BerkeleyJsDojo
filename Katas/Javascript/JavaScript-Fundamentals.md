@@ -71,7 +71,7 @@ typeof null
 
 ### Loops
 
-#### For Loops
+#### For Loop
 
 ```javascript
 for (var i = 0; i < 10; i++) {
@@ -79,7 +79,20 @@ for (var i = 0; i < 10; i++) {
 }
 ```
 
-#### While Loops
+#### For...of Loop
+
+* loop over iterable objects
+
+```js
+let dices = ['4d','6d','8d','10d','12d','20d'];
+
+// logs '4d','6d','8d','10d'
+for(let dice of dices){
+  console.log(dice);
+}
+```
+
+#### While Loop
 
 ```javascript
 var userInput;
@@ -165,6 +178,17 @@ dogs.forEach(function(dog) {
 });
 console.log(dogs); // One thing to note: a forEach loop
 ["pomeranian", "corgi", "shih tzu"]; // does not change the original array!
+```
+
+```javascript
+let SR_gangs = ['Ancients','Comando Verde','Cutters','Numbers Gang','Cocotona','Yardies','Konton-Shi','First Nation','Blindfish','Vikings']
+
+// logs 0 Ancients 1 Comando Verde 2 Cutters 3 Numbers Gang 4 Cocotona 5 Yardies 6 Konton-Shi 7 First Nation 8 Blindfish 9 Vikings
+
+SR_gangs.forEach(function(SR_gang,index){
+  console.log(index); // index
+  console.log(SR_gang); // value
+});
 ```
 
 #### Array, reduce
