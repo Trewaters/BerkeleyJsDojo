@@ -2,7 +2,10 @@
 
 ## Get HTML Elements
 
-* find first matching element, "not found" returns `null`.
+* JS Selector syntax resource (https://www.w3schools.com/w3js/w3js_selectors.asp)
+* JS Selector coding strategy (https://gomakethings.com/javascript-selectors-in-html/)
+
+* Find first matching element, "not found" returns `null`.
 
 ```javascript
 // The first button
