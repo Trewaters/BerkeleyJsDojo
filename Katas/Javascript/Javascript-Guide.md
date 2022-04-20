@@ -55,7 +55,7 @@ function iterate(obj, stack) {
 iterate(response, "");
 ```
 
-## Position 5: Print Multiplication table
+## Position 4: Print Multiplication table
 let yNum: number = 12;
 let xStr: string = "";
 let yStr: string = "";
