@@ -84,7 +84,7 @@ if (red.matches('[data-snack]')){
 
 ## EventTarget
 
-* [addEventListener()]https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener() can only add to an individual element.
+* [addEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) method can only add to an individual element.
 
 ```javascript
 // Listen for clicks on the entire window
