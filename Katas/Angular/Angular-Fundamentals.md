@@ -2,6 +2,15 @@
 
 Tips for Angular in general and step by step solutions to various Angular katas. This guide is based on Angular 7.
 
+Make sure these basics are covered below:
+- Services
+- Directives
+- Routing
+- Filters (Pipes)
+- Promises
+- Templates
+- Other
+
 ## Good To Know
 
 - Below are concepts good to know in Angular

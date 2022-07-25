@@ -15,18 +15,19 @@
 - Objects
 - use `typeof` operator to discover type
   - [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
-```javascript
-typeof "John"
-typeof 3.14
-typeof NaN
-typeof false
-typeof [1,2,3,4]
-typeof {name: 'John', age:34}
-typeof new Date()
-typeof function(){}
-typeof mycar
-typeof null
-```
+
+    ```javascript
+    typeof "John";
+    typeof 3.14;
+    typeof NaN;
+    typeof false;
+    typeof [1, 2, 3, 4];
+    typeof { name: "John", age: 34 };
+    typeof new Date();
+    typeof function() {};
+    typeof mycar;
+    typeof null;
+    ```
 
 ### Conditionals (Comparison & Logical Operators)
 
@@ -66,8 +67,8 @@ typeof null
 ### Variable Declarations
 
 - `var` [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var)
-- `const`[documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
-- `let`[documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
+- `const` [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
+- `let` [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
 
 ### Loops
 
@@ -95,15 +96,15 @@ while (userInput !== "STOP") {
 
 - `.isArray()` determines whether the passed value is an array [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray)
 
-`Array.isArray();`
+  `Array.isArray();`
 
 - `.sort()` sorts array in place and returns the array, [document here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
 
-`numArray.sort();`
+  `numArray.sort();`
 
 - `.reverse()` reverses an array in place [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse)
 
-`numArray.reverse();`
+  `numArray.reverse();`
 
 - `.slice()` returns a shallow copy of a portion of an array into a new array object, starting in one position going to the end. Original array is not modified. [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
 
@@ -155,34 +156,27 @@ while (userInput !== "STOP") {
 
   `numArray.includes("Three");`
 
-#### Array, forEach
+- `for..of` loops
+- `forEach()` [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
 
-```javascript
-var dogs = ["pomeranian", "corgi", "shih tzu"];
-dogs.forEach(function(dog) {
-  // dog is a parameter name used
-  dog = dog + "s"; // to represent each item
-});
-console.log(dogs); // One thing to note: a forEach loop
-["pomeranian", "corgi", "shih tzu"]; // does not change the original array!
-```
-
-#### Array, reduce
-
-
-#### Maps
-
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map
-
-#### Filter
-
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+  ```javascript
+  var dogs = ["pomeranian", "corgi", "shih tzu"];
+  dogs.forEach(function(dog) {
+    // dog is a parameter name used
+    dog = dog + "s"; // to represent each item
+  });
+  console.log(dogs); // One thing to note: a forEach loop
+  ["pomeranian", "corgi", "shih tzu"]; // does not change the original array!
+  ```
+- `reduce()` [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
+- `filter()` [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 
 ### Objects
 
-object documentation [here](https://javascript.info/object), [and here](https://www.tutorialspoint.com/javascript/javascript_objects.htm)
+object documentation [here](https://javascript.info/object), and more from tutorials Point [here](https://www.tutorialspoint.com/javascript/javascript_objects.htm)
 
 **6 types of objects**
+
 - Object
 - Date
 - Array
@@ -202,13 +196,14 @@ var movie = {
 ```
 
 - keyword delete will remove the property, `delete OBJECT.PROPERTY`
-
 - dot notation Object.KEY
 - bracket notation OBJECT["KEY"]
 - `for...in` loops
 - `Object.keys(x)` returns array of properties
 - `Object.getOwnPropertyNames(x)` array of all own properties' name
 - `Object.values(x)` return array of property values
+- `Object.entries(x)` return array of key value pairs
+- `Map` object [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
 
 ### HTML Forms using JavaScript
 
@@ -223,41 +218,45 @@ var movie = {
 - `.slice()` extracts part of a string and returns the extracted part in a new string. Parameters are the start position and the end position. [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice)
 - `.split()` converts string to an array. [documented here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
 
-```javascript
-var str = "The quick brown fox jumped over the lazy dog.";
-
-var words = str.split(" ");
-console.log(words);
-// expected output: ["The", "quick", "brown", "fox", "jumped", "over", "the", "lazy", "dog."]
-```
-
-- `` [documented here]()
+  ```javascript
+  var str = "The quick brown fox jumped over the lazy dog.";
+  
+  var words = str.split(" ");
+  console.log(words);
+  // expected output: ["The", "quick", "brown", "fox", "jumped", "over", "the",   "lazy", "dog."]
+  ```
 
 ### Converting Data Types
+
 - "Implicit Conversion" or "type coersion", [blog post](https://hackernoon.com/understanding-js-coercion-ff5684475bfc), [documented on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)
 - Convert value to string
-```javascript
-String(1999);
-// or
-val.toString()
-```
+
+  ```javascript
+  String(1999);
+  // or
+  val.toString();
+  ```
+
 - Convert value to number
-```javascript
-Number("1999");
-Number(false); // return 0
-Number(true); // return 1
-Number("Ten") // return NaN
-```
+
+  ```javascript
+  Number("1999");
+  Number(false); // return 0
+  Number(true); // return 1
+  Number("Ten"); // return NaN
+  ```
+
 - Convert value to Booleans
-```javascript
-// falsy values
-Boolean(0);
-Boolean("");
-Boolean(undefined);
-Boolean(NaN);
-Boolean(null);
-Boolean("false"); // return true
-```
+
+  ```javascript
+  // falsy values
+  Boolean(0);
+  Boolean("");
+  Boolean(undefined);
+  Boolean(NaN);
+  Boolean(null);
+  Boolean("false"); // return true
+  ```
 
 ### Alerts
 
@@ -287,4 +286,3 @@ Boolean("false"); // return true
 - `console.log("place your important message here for the debugging console")`
 - `console.error` [documented here](https://developer.mozilla.org/en-US/docs/Web/API/Console/error)
 - `console.trace` [documented here](https://developer.mozilla.org/en-US/docs/Web/API/Console/trace) - this one sounded interesting so I added it but I need to experiment and see what it does.
-
