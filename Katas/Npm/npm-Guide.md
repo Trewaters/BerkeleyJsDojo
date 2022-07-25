@@ -28,6 +28,10 @@
 
 - `npm update <PACKAGE>` [documentation](https://docs.npmjs.com/cli/update)
 
+### Check npm version
+
+- `npm -v` or `npm --version` [documentation](https://docs.npmjs.com/cli/v7/commands/npm-version)
+
 ### Update to latest version of npm
 
 - `npm install npm@latest` (https://docs.npmjs.com/troubleshooting/try-the-latest-stable-version-of-npm)

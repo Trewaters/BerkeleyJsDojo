@@ -72,7 +72,7 @@
 
 ### Loops
 
-#### For Loops
+#### For Loop
 
 ```javascript
 for (var i = 0; i < 10; i++) {
@@ -80,7 +80,20 @@ for (var i = 0; i < 10; i++) {
 }
 ```
 
-#### While Loops
+#### For...of Loop
+
+* loop over iterable objects
+
+```js
+let dices = ['4d','6d','8d','10d','12d','20d'];
+
+// logs '4d','6d','8d','10d'
+for(let dice of dices){
+  console.log(dice);
+}
+```
+
+#### While Loop
 
 ```javascript
 var userInput;
