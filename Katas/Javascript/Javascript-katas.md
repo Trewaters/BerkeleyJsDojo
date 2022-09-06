@@ -83,14 +83,31 @@ Create an array of data. Must have at least 2 items. Loop through each item in t
 
 Create a function to calculate tip amount. If given the total charge of the service show how much money should be added to the charge as a tip. Give tip amount and total amount after tip.
 
-
 ## Position 4: Print Multiplication table
 
 Create a function that prints out the multiplication tables given to it.
 
-## Position...: Dates inputs
+## Position 5: Date Object
 
-* Get time data from an HTML date input
+[JS Date Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
+
+- Browser JS, get date object
+
+```JS
+let tDate = new Date();
+// returns "2022-09-06T17:32:41.827Z"
+tDate.toTimeString();
+// returns '10:32:41 GMT-0700 (Pacific Daylight Time)'
+tDate.toDateString();
+// returns 'Tue Sep 06 2022'
+tDate.toLocaleDateString();
+// returns '9/6/2022'
+tDate.toLocaleTimeString();
+// returns '10:32:41 AM'
+```
+
+- Get time data from an HTML date input
+
 ```html
 <label for="date">Pick a date</label>
 <input type="date" name="date" id="date">
@@ -106,7 +123,8 @@ date.addEventListener('input',function(){
     console.log(date)
 })
 ```
-* simpler way to get time
+
+- simpler way to get time
 
 ```javascript
 let field = document.querySelector('#date');
@@ -124,4 +142,4 @@ let field = document.querySelector('#date');
 field.valueAsDate = new Date();
 ```
 
-## Position...: 
+## Position
